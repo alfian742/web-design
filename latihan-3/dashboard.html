@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3 - Sidebar</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/img/UTM.png" type="image/png">
+    <link rel="apple-touch-icon" href="../assets/img/UTM.png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="../assets/fontawesome-icons/css/all.min.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Headder -->
+    <header class="navbar sticky-top text-bg-primary flex-md-nowrap p-0 shadow-sm">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-5 text-white fw-medium d-none d-lg-inline"
+            href="index.html">
+            <div class="d-flex flex-row align-items-center gap-2">
+                <img src="../assets/img/UTM.png" alt="UTM" width="32" height="32">
+                <span>My Website</span>
+            </div>
+        </a>
+
+        <!-- Button trigger offcanvas -->
+        <button class="nav-link px-3 text-white d-lg-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="d-flex flex-row gap-2 align-items-center">
+            <!-- Button trigger modal search -->
+            <button type="button" class="nav-link px-3 text-white" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <i class="fa-solid fa-search"></i>
+            </button>
+
+            <div class="dropdown me-1">
+                <a href="#" class="d-block link-body-emphasis dropdown-toggle dropdown-profile"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="navbar-brand">
+                        <img src="img/profile.png" alt="Profile" width="32" height="32" class="rounded-circle">
+                    </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end shadow">
+                    <li><a class="dropdown-item fs-6" href="#profile"><i class="fa-solid fa-user"></i> Profile</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item fs-6 text-danger" href="#sign-out"><i
+                                class="fa-solid fa-right-from-bracket"></i>
+                            Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modal search -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="searchModalLabel">Search</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Keyword..." aria-label="Keyword..."
+                            aria-describedby="search">
+                        <button class="btn btn-primary" type="button" id="search"><i
+                                class="fa-solid fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of header -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
+                <div class="offcanvas-md offcanvas-start bg-body-tertiary" tabindex="-1" id="sidebarMenu"
+                    aria-labelledby="sidebarMenuLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="sidebarMenuLabel">
+                            <div class="d-flex flex-row gap-2 align-items-center">
+                                <img src="../assets/img/UTM.png" alt="UTM" height="32" width="32">
+                                My Website
+                            </div>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            data-bs-target="#sidebarMenu" aria-label="Close"></button>
+                    </div>
+                    <hr class="d-lg-none">
+                    <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+                        <ul class="nav flex-column gap-2 px-3">
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center gap-3" href="index.html">
+                                    <i class="fa-solid fa-home"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center gap-3 active" aria-current="page"
+                                    href="dashboard.html">
+                                    <i class="fa-solid fa-dashboard"></i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center gap-3" href="#">
+                                    <i class="fa-solid fa-table"></i>
+                                    Orders
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center gap-3" href="#">
+                                    <i class="fa-solid fa-cubes"></i>
+                                    Products
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center gap-3" href="#">
+                                    <i class="fa-solid fa-users"></i>
+                                    Customers
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End of sidebar -->
+
+            <!-- Content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h2 class="h2">Dashboard</h2>
+                </div>
+
+                <h3 class="text-center fw-medium">Latihan 3 - Sidebar</h3>
+
+                <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+
+                <p class="text-center fs-5 fw-medium">Contoh Chart Dashboard</p>
+            </main>
+            <!-- End of content -->
+        </div>
+    </div>
+
+    <!-- Bootstrap js bundle with @popper -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="js/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
