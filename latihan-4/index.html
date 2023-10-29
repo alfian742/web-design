@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 4 - Album</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/img/UTM.png" type="image/png">
+    <link rel="apple-touch-icon" href="../assets/img/UTM.png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="../assets/fontawesome-icons/css/all.min.css">
+
+    <!-- Custom css -->
+    <style>
+        .header-background {
+            background-image: url('img/hero_background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header-content {
+            background: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-background">
+        <div class="header-content">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand fw-medium" href="index.html">
+                        <img src="img/brand.png" width="32" height="32" class="d-inline-block align-text-top"> My Album
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-center ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#collections">Collections</a>
+                            </li>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-light rounded-pill fw-medium w-100 px-3"
+                                data-bs-toggle="modal" data-bs-target="#loginModal">
+                                Login
+                            </button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End of navbar -->
+
+            <!-- Hero -->
+            <div class="py-5 container text-center text-white">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-medium">Welcome to My Album</h1>
+                        <p class="lead">collection of photos of MPV, SUV, sedan, hatchback, sport and hybrid cars.
+                        </p>
+                        <p>
+                            <a href="#collections" class="btn btn-lg btn-light fw-medium rounded-pill my-2">View
+                                Collections</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of hero -->
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <button type="button" class="btn btn-lg btn-dark w-100 mb-3">Login</button>
+
+                        <div class="text-center">
+                            <small>or continue with</small>
+                            <div class="d-flex flex-row justify-content-center align-items-center gap-3 my-3">
+                                <a href="#google" class="btn btn-dark"><i class="fa-brands fa-google"></i></a>
+                                <a href="#apple" class="btn btn-dark"><i class="fa-brands fa-apple"></i></a>
+                                <a href="#microsoft" class="btn btn-dark"><i class="fa-brands fa-microsoft"></i></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+
+    <!-- Content -->
+    <main>
+        <div class="album py-5 bg-body-tertiary" id="collections">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-4">
+                            <img src="https://source.unsplash.com/random/300×300/?mercedes-benz" alt="..."
+                                class="card-img-top rounded-top-4 object-fit-cover" width="100%" height="225">
+                            <div class=" card-body">
+                                <h5 class="card-title">My Car</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+                                    exercitationem velit sequi vitae fugiat ea.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="content.html" class="btn btn-sm btn-outline-dark rounded-pill">View
+                                        more...</a>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-4">
+                            <img src="https://source.unsplash.com/random/300×300/?toyota" alt="..."
+                                class="card-img-top rounded-top-4 object-fit-cover" width="100%" height="225">
+                            <div class=" card-body">
+                                <h5 class="card-title">My Car</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+                                    exercitationem velit sequi vitae fugiat ea.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="content.html" class="btn btn-sm btn-outline-dark rounded-pill">View
+                                        more...</a>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-4">
+                            <img src="https://source.unsplash.com/random/300×300/?lamborghini" alt="..."
+                                class="card-img-top rounded-top-4 object-fit-cover" width="100%" height="225">
+                            <div class=" card-body">
+                                <h5 class="card-title">My Car</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+                                    exercitationem velit sequi vitae fugiat ea.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="content.html" class="btn btn-sm btn-outline-dark rounded-pill">View
+                                        more...</a>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-4">
+                            <img src="https://source.unsplash.com/random/300×300/?bmw" alt="..."
+                                class="card-img-top rounded-top-4 object-fit-cover" width="100%" height="225">
+                            <div class=" card-body">
+                                <h5 class="card-title">My Car</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+                                    exercitationem velit sequi vitae fugiat ea.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="content.html" class="btn btn-sm btn-outline-dark rounded-pill">View
+                                        more...</a>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-4">
+                            <img src="https://source.unsplash.com/random/300×300/?ferrari" alt="..."
+                                class="card-img-top rounded-top-4 object-fit-cover" width="100%" height="225">
+                            <div class=" card-body">
+                                <h5 class="card-title">My Car</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+                                    exercitationem velit sequi vitae fugiat ea.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="content.html" class="btn btn-sm btn-outline-dark rounded-pill">View
+                                        more...</a>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-4">
+                            <img src="https://source.unsplash.com/random/300×300/?chevrolet" alt="..."
+                                class="card-img-top rounded-top-4 object-fit-cover" width="100%" height="225">
+                            <div class=" card-body">
+                                <h5 class="card-title">My Car</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+                                    exercitationem velit sequi vitae fugiat ea.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="content.html" class="btn btn-sm btn-outline-dark rounded-pill">View
+                                        more...</a>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-4">
+                            <img src="https://source.unsplash.com/random/300×300/?nissan" alt="..."
+                                class="card-img-top rounded-top-4 object-fit-cover" width="100%" height="225">
+                            <div class=" card-body">
+                                <h5 class="card-title">My Car</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+                                    exercitationem velit sequi vitae fugiat ea.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="content.html" class="btn btn-sm btn-outline-dark rounded-pill">View
+                                        more...</a>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-4">
+                            <img src="https://source.unsplash.com/random/300×300/?honda-civic" alt="..."
+                                class="card-img-top rounded-top-4 object-fit-cover" width="100%" height="225">
+                            <div class=" card-body">
+                                <h5 class="card-title">My Car</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+                                    exercitationem velit sequi vitae fugiat ea.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="content.html" class="btn btn-sm btn-outline-dark rounded-pill">View
+                                        more...</a>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-4">
+                            <img src="https://source.unsplash.com/random/300×300/?mitsubishi" alt="..."
+                                class="card-img-top rounded-top-4 object-fit-cover" width="100%" height="225">
+                            <div class=" card-body">
+                                <h5 class="card-title">My Car</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+                                    exercitationem velit sequi vitae fugiat ea.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="content.html" class="btn btn-sm btn-outline-dark rounded-pill">View
+                                        more...</a>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End of content -->
+
+    <!-- Footer -->
+    <footer class="text-body-secondary py-4">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <span class="fw-medium mt-1">Created by Alfian Hidayat.</span>
+                <div class="d-flex flex-row gap-2">
+                    <a href="#email" class="btn btn-sm btn-dark"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#instagram" class="btn btn-sm btn-dark"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="btn btn-sm btn-dark"><i class="fa-solid fa-angle-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Bootstrap js bundle with @popper -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

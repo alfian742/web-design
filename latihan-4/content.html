@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 4 - Album</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/img/UTM.png" type="image/png">
+    <link rel="apple-touch-icon" href="../assets/img/UTM.png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="../assets/fontawesome-icons/css/all.min.css">
+
+    <!-- Custom css -->
+    <style>
+        .header-background {
+            background-image: url('img/hero_background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header-content {
+            background: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-medium" href="index.html">
+                <img src="img/brand.png" width="32" height="32" class="d-inline-block align-text-top"> My Album
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-center ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#collections">Collections</a>
+                    </li>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-light rounded-pill fw-medium w-100 px-3"
+                        data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Login
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <button type="button" class="btn btn-lg btn-dark w-100 mb-3">Login</button>
+
+                        <div class="text-center">
+                            <small>or continue with</small>
+                            <div class="d-flex flex-row justify-content-center align-items-center gap-3 my-3">
+                                <a href="#google" class="btn btn-dark"><i class="fa-brands fa-google"></i></a>
+                                <a href="#apple" class="btn btn-dark"><i class="fa-brands fa-apple"></i></a>
+                                <a href="#microsoft" class="btn btn-dark"><i class="fa-brands fa-microsoft"></i></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of navbar -->
+
+    <!-- Content -->
+    <main>
+        <div class="album py-5 bg-body-tertiary" id="collections">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-4 w-100">
+                            <img src="https://source.unsplash.com/random/300×300/?car" alt="..."
+                                class="card-img-top rounded-top-4 object-fit-cover" width="100%" height="350">
+                            <div class=" card-body">
+                                <h2 class="card-title text-center">My Car</h2>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Asperiores quisquam aliquam dolores id neque necessitatibus illo ab aut pariatur
+                                    impedit. Sit, ut animi aliquid soluta repellat cum culpa officiis architecto magni
+                                    dicta alias quam vero vel sequi ea, laudantium inventore ipsam ipsa earum eveniet
+                                    totam facere necessitatibus ullam? Commodi officia officiis saepe rerum maxime optio
+                                    culpa porro. Nulla enim iure similique veniam itaque voluptates, quisquam laborum
+                                    sit alias ducimus animi veritatis reprehenderit at eveniet repellendus accusamus
+                                    explicabo doloremque tenetur. Aliquam, quidem iure. Ad quae beatae nulla praesentium
+                                    facilis quisquam eos neque, corporis quidem natus molestias dignissimos odit
+                                    quaerat, veniam iure?</p>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Asperiores quisquam aliquam dolores id neque necessitatibus illo ab aut pariatur
+                                    impedit. Sit, ut animi aliquid soluta repellat cum culpa officiis architecto magni
+                                    dicta alias quam vero vel sequi ea, laudantium inventore ipsam ipsa earum eveniet
+                                    totam facere necessitatibus ullam? Commodi officia officiis saepe rerum maxime optio
+                                    culpa porro. Nulla enim iure similique veniam itaque voluptates, quisquam laborum
+                                    sit alias ducimus animi veritatis reprehenderit at eveniet repellendus accusamus
+                                    explicabo doloremque tenetur. Aliquam, quidem iure. Ad quae beatae nulla praesentium
+                                    facilis quisquam eos neque, corporis quidem natus molestias dignissimos odit
+                                    quaerat, veniam iure?</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="index.html" class="btn btn-sm btn-outline-dark rounded-pill">Back to
+                                        Home</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End of content -->
+
+    <!-- Footer -->
+    <footer class="text-body-secondary py-4">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <span class="fw-medium mt-1">Created by Alfian Hidayat.</span>
+                <div class="d-flex flex-row gap-2">
+                    <a href="#email" class="btn btn-sm btn-dark"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#instagram" class="btn btn-sm btn-dark"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="btn btn-sm btn-dark"><i class="fa-solid fa-angle-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Bootstrap js bundle with @popper -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
