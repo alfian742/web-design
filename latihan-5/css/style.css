@@ -117,10 +117,19 @@ body {
         /* rtl:end:ignore */
         z-index: 1030;
         grid-column: 1 / span 3;
-        background-image: url('../img/Header.png');
+        background-image: url('../img/header-background.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .bd-footer {
+        bottom: 0;
+        /* rtl:begin:ignore */
+        right: 0;
+        left: 0;
+        /* rtl:end:ignore */
+        grid-column: 1 / span 3;
     }
 
     .bd-aside,
@@ -179,8 +188,14 @@ body {
 
 @media (max-width: 1199px) {
     .bd-header {
-        background-image: url('../img/Header.png');
+        background-image: url('../img/header-background.png');
         background-position: right;
         background-repeat: no-repeat;
+    }
+
+    .custom-carousel-icon {
+        height: 40px;
+        width: 40px;
+        font-size: 28px;
     }
 }

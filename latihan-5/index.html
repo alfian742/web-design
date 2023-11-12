@@ -22,7 +22,7 @@
 
 <body>
     <!-- Header -->
-    <header class="bd-header bg-dark py-3 shadow-sm">
+    <header class="bd-header py-3 shadow-sm">
         <div class="d-none d-lg-block">
             <div class="container-fluid d-flex justify-content-center align-items-center">
                 <div class="d-flex align-items-center">
@@ -77,49 +77,11 @@
                 </li>
                 <li class="my-2">
                     <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse"
-                        aria-expanded="false" data-bs-target="#components-collapse"
-                        aria-controls="components-collapse">Components</button>
-                    <ul class="list-unstyled ps-3 collapse" id="components-collapse">
+                        aria-expanded="false" data-bs-target="#budaya-collapse"
+                        aria-controls="budaya-collapse">Budaya</button>
+                    <ul class="list-unstyled ps-3 collapse" id="budaya-collapse">
                         <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#accordion">Accordion</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#alerts">Alerts</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#badge">Badge</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#breadcrumb">Breadcrumb</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#buttons">Buttons</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#button-group">Button group</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#card">Card</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#carousel">Carousel</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#dropdowns">Dropdowns</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#list-group">List group</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#modal">Modal</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#navs">Navs</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#navbar">Navbar</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#pagination">Pagination</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#popovers">Popovers</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#progress">Progress</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#scrollspy">Scrollspy</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#spinners">Spinners</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#toasts">Toasts</a></li>
-                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
-                                href="#tooltips">Tooltips</a></li>
+                                href="#pertunjukan">Pertunjukan</a></li>
                     </ul>
                 </li>
             </ul>
@@ -127,8 +89,8 @@
     </aside>
     <!-- End of aside -->
 
-    <!-- Contents -->
-    <div class="bd-cheatsheet container-fluid bg-body">
+    <!-- Main -->
+    <main class="bd-cheatsheet container-fluid bg-body">
         <!-- Overview -->
         <section id="overview">
             <h2 class="sticky-xl-top fw-bold"></h2>
@@ -141,57 +103,67 @@
                 <div>
                     <div class="bd-example-snippet bd-code-snippet">
                         <div class="bd-example m-0 border-0">
-                            <h1 class="text-center mb-4">INDONESIA</h2>
-                                <div id="carouselOverview" class="carousel slide" data-bs-ride="true">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselOverview" data-bs-slide-to="0"
-                                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselOverview" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselOverview" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
+                            <div class="row mb-4">
+                                <div class="col">
+                                    <h1 class="text-center mb-4">INDONESIA</h1>
+                                    <div id="carouselOverview" class="carousel slide" data-bs-ride="true">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselOverview"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselOverview"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselOverview"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="img/carousel-1.png" class="d-block w-100 rounded-2"
+                                                    alt="carousel-1">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/carousel-2.png" class="d-block w-100 rounded-2"
+                                                    alt="carousel-2">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/carousel-3.png" class="d-block w-100 rounded-2"
+                                                    alt="carousel-3">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselOverview" data-bs-slide="prev">
+                                            <span class="custom-carousel-icon text-bg-light rounded-2"
+                                                aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselOverview" data-bs-slide="next">
+                                            <span class="custom-carousel-icon text-bg-light rounded-2"
+                                                aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="img/Carousel-1.png" class="d-block w-100 rounded-2"
-                                                alt="carousel-1">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="img/Carousel-2.png" class="d-block w-100 rounded-2"
-                                                alt="carousel-2">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="img/Carousel-3.png" class="d-block w-100 rounded-2"
-                                                alt="carousel-3">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#carouselOverview" data-bs-slide="prev">
-                                        <span class="custom-carousel-icon text-bg-light rounded-2" aria-hidden="true"><i
-                                                class="fa-solid fa-angle-left"></i></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carouselOverview" data-bs-slide="next">
-                                        <span class="custom-carousel-icon text-bg-light rounded-2" aria-hidden="true"><i
-                                                class="fa-solid fa-angle-right"></i></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
                                 </div>
-                        </div>
-                    </div>
+                            </div>
 
-
-                    <div class="bd-example-snippet bd-code-snippet">
-                        <div class="bd-example m-0 border-0">
-                            <p>Indonesia merupakan negara terluas ke-14 sekaligus negara kepulauan terbesar di dunia
-                                dengan luas wilayah sebesar 1.904.569 km², serta negara dengan pulau terbanyak ke-6
-                                di dunia, dengan jumlah 17.504 pulau. Nama alternatif yang dipakai untuk kepulauan
-                                Indonesia disebut Nusantara. Selain itu, Indonesia juga menjadi negara berpenduduk
-                                terbanyak ke-4 di dunia dengan penduduk mencapai 277.749.853 jiwa pada tahun 2022,
-                                serta negara dengan penduduk beragama Islam terbanyak di dunia, dengan penganut lebih
-                                dari 238.875.159 jiwa atau sekitar 86,9%. Indonesia adalah negara multiras,
-                                multietnis, dan multikultural di dunia.</p>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Indonesia merupakan negara terluas ke-14 sekaligus negara kepulauan terbesar di
+                                        dunia
+                                        dengan luas wilayah sebesar 1.904.569 km², serta negara dengan pulau terbanyak
+                                        ke-6
+                                        di dunia, dengan jumlah 17.504 pulau. Nama alternatif yang dipakai untuk
+                                        kepulauan
+                                        Indonesia disebut Nusantara. Selain itu, Indonesia juga menjadi negara
+                                        berpenduduk
+                                        terbanyak ke-4 di dunia dengan penduduk mencapai 277.749.853 jiwa pada tahun
+                                        2022,
+                                        serta negara dengan penduduk beragama Islam terbanyak di dunia, dengan penganut
+                                        lebih
+                                        dari 238.875.159 jiwa atau sekitar 86,9%. Indonesia adalah negara multiras,
+                                        multietnis, dan multikultural di dunia.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -228,8 +200,7 @@
                                 <div class="col-sm-4">
                                     <figure class="figure">
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Gunung_Palung_Jungle.jpg/250px-Gunung_Palung_Jungle.jpg"
-                                            class="figure-img img-fluid rounded-2 shadow-sm object-fit-cover w-100"
-                                            alt="Hutan Hujan">
+                                            class="rounded-2 shadow-sm object-fit-cover w-100" alt="Hutan Hujan">
                                         <figcaption class="figure-caption text-center">Hutan hujan di Taman Nasional
                                             Gunung
                                             Palung, Kalimantan Barat
@@ -297,7 +268,7 @@
                                 <div class="col-sm-6">
                                     <figure class="figure mb-3">
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Koppen-Geiger_Map_IDN_present.svg/500px-Koppen-Geiger_Map_IDN_present.svg.png"
-                                            class="figure-img img-fluid rounded-2 shadow-sm object-fit-cover w-100"
+                                            class="rounded-2 shadow-sm object-fit-cover w-100"
                                             alt="Peta Klasifikasi Iklim">
                                         <figcaption class="figure-caption text-center">Peta klasifikasi Iklim Köppen
                                             Indonesia
@@ -370,7 +341,7 @@
                                 <div class="col-sm-6">
                                     <figure class="figure mb-3">
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Map_indonesia_volcanoes.gif/400px-Map_indonesia_volcanoes.gif"
-                                            class="figure-img img-fluid rounded-2 shadow-sm object-fit-cover w-100"
+                                            class="rounded-2 shadow-sm object-fit-cover w-100"
                                             alt="Peta Wilayah Gunung Berapi Indonesia">
                                         <figcaption class="figure-caption text-center">Gunung-gunung berapi utama di
                                             Indonesia, yang merupakan bagian dari Cincin Api Pasifik
@@ -512,15 +483,14 @@
                                 <div class="col-sm-4">
                                     <figure class="figure mb-3">
                                         <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/5f/Gedung_MPR-DPR.PNG/250px-Gedung_MPR-DPR.PNG"
-                                            class="figure-img img-fluid rounded-2 shadow-sm object-fit-cover w-100"
-                                            alt="Gedung MPR">
+                                            class="rounded-2 shadow-sm object-fit-cover w-100" alt="Gedung MPR">
                                         <figcaption class="figure-caption text-center">Gedung MPR/DPR dalam Kompleks
                                             Parlemen Republik Indonesia
                                         </figcaption>
                                     </figure>
                                     <figure class="figure mb-3">
                                         <img src="https://upload.wikimedia.org/wikipedia/id/thumb/9/98/Istana_Negara.JPG/250px-Istana_Negara.JPG"
-                                            class="figure-img img-fluid rounded-2 shadow-sm object-fit-cover w-100"
+                                            class="rounded-2 shadow-sm object-fit-cover w-100"
                                             alt="Gedung Istana Negara">
                                         <figcaption class="figure-caption text-center">Gedung Istana Negara, salah satu
                                             dari enam Istana Kepresidenan di Indonesia
@@ -587,7 +557,7 @@
                     <div class="bd-example-snippet bd-code-snippet">
                         <div class="bd-example m-0 border-0">
                             <div class="row justify-content-center">
-                                <div class="col col-lg-3 mb-3">
+                                <div class="col-6 col-lg-3 mb-3">
                                     <div class="card rounded-2 shadow-sm border-0">
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Presiden_Sukarno.jpg/175px-Presiden_Sukarno.jpg"
                                             class="card-img-top rounded-top-2 object-fit-cover w-100" height="250"
@@ -602,7 +572,6 @@
                                                     Detail
                                                 </button>
                                             </div>
-
                                         </div>
                                     </div>
                                     <!-- Modal -->
@@ -617,12 +586,12 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <div class="row">
-                                                        <div class="col-sm-4 mb-3">
+                                                        <div class="col-sm-5 mb-3">
                                                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Presiden_Sukarno.jpg/175px-Presiden_Sukarno.jpg"
-                                                                class="rounded-2 object-fit-cover w-100" height="250"
+                                                                class="rounded-2 object-fit-cover w-100" height="300"
                                                                 alt="Presiden Soekarno">
                                                         </div>
-                                                        <div class="col-sm-8">
+                                                        <div class="col-sm-7">
                                                             <h5 class="mb-3">Soekarno</h5>
                                                             <p>Dr. (H.C.) Ir. H. Soekarno adalah
                                                                 Presiden pertama Republik Indonesia yang menjabat pada
@@ -634,6 +603,350 @@
                                                 </div>
                                                 <div class="modal-footer">
                                                     <a href="https://id.wikipedia.org/wiki/Soekarno" target="_blank"
+                                                        class="btn btn-sm btn-dark">Lihat
+                                                        Selengkapnya
+                                                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3 mb-3">
+                                    <div class="card rounded-2 shadow-sm border-0">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/President_Suharto%2C_1993.jpg/175px-President_Suharto%2C_1993.jpg"
+                                            class="card-img-top rounded-top-2 object-fit-cover w-100" height="250"
+                                            alt="Presiden Soeharto">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Soeharto</h5>
+                                            <p class="card-text text-center">(1967-1998)</p>
+                                            <!-- Button trigger modal -->
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <button type="button" class="btn btn-sm btn-outline-dark px-3"
+                                                    data-bs-toggle="modal" data-bs-target="#presiden2">
+                                                    Detail
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="presiden2" tabindex="-1"
+                                        aria-labelledby="presiden2Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="presiden2Label">Presiden</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-5 mb-3">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/President_Suharto%2C_1993.jpg/175px-President_Suharto%2C_1993.jpg"
+                                                                class="rounded-2 object-fit-cover w-100" height="300"
+                                                                alt="Presiden Soeharto">
+                                                        </div>
+                                                        <div class="col-sm-7">
+                                                            <h5 class="mb-3">Soeharto</h5>
+                                                            <p>Jenderal Besar TNI (Purn.) H. M. Soeharto, adalah
+                                                                Presiden kedua Indonesia yang menjabat dari tahun 1967
+                                                                sampai 1998, menggantikan Soekarno. Di dunia
+                                                                internasional, terutama di Dunia Barat, Soeharto sering
+                                                                dirujuk dengan sebutan populer "The Smiling General".
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a href="https://id.wikipedia.org/wiki/Soeharto" target="_blank"
+                                                        class="btn btn-sm btn-dark">Lihat
+                                                        Selengkapnya
+                                                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3 mb-3">
+                                    <div class="card rounded-2 shadow-sm border-0">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/B._J._Habibie%2C_President_of_Indonesia_portrait.jpg/220px-B._J._Habibie%2C_President_of_Indonesia_portrait.jpg"
+                                            class="card-img-top rounded-top-2 object-fit-cover w-100" height="250"
+                                            alt="Presiden B. J. Habibie">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">B. J. Habibie</h5>
+                                            <p class="card-text text-center">(1998-1999)</p>
+                                            <!-- Button trigger modal -->
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <button type="button" class="btn btn-sm btn-outline-dark px-3"
+                                                    data-bs-toggle="modal" data-bs-target="#presiden3">
+                                                    Detail
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="presiden3" tabindex="-1"
+                                        aria-labelledby="presiden3Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="presiden3Label">Presiden</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-5 mb-3">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/B._J._Habibie%2C_President_of_Indonesia_portrait.jpg/220px-B._J._Habibie%2C_President_of_Indonesia_portrait.jpg"
+                                                                class="rounded-2 object-fit-cover w-100" height="300"
+                                                                alt="Presiden B. J. Habibie">
+                                                        </div>
+                                                        <div class="col-sm-7">
+                                                            <h5 class="mb-3">B. J. Habibie</h5>
+                                                            <p>Prof. Dr.-Ing. Ir. H. Bacharuddin Jusuf Habibie,
+                                                                FREng. (25 Juni 1936 – 11 September 2019) adalah
+                                                                Presiden Republik Indonesia yang ketiga. Sebelumnya,
+                                                                B.J. Habibie menjabat sebagai Wakil Presiden Republik
+                                                                Indonesia ke-7, menggantikan Try Sutrisno. B. J. Habibie
+                                                                menggantikan Soeharto yang mengundurkan diri dari
+                                                                jabatan presiden pada tanggal 21 Mei 1998.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a href="https://id.wikipedia.org/wiki/B._J._Habibie"
+                                                        target="_blank" class="btn btn-sm btn-dark">Lihat
+                                                        Selengkapnya
+                                                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3 mb-3">
+                                    <div class="card rounded-2 shadow-sm border-0">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/President_Abdurrahman_Wahid_-_Indonesia.jpg/220px-President_Abdurrahman_Wahid_-_Indonesia.jpg"
+                                            class="card-img-top rounded-top-2 object-fit-cover w-100" height="250"
+                                            alt="Presiden Abdurrahman Wahid">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">A. Wahid</h5>
+                                            <p class="card-text text-center">(1999-2001)</p>
+                                            <!-- Button trigger modal -->
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <button type="button" class="btn btn-sm btn-outline-dark px-3"
+                                                    data-bs-toggle="modal" data-bs-target="#presiden4">
+                                                    Detail
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="presiden4" tabindex="-1"
+                                        aria-labelledby="presiden4Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="presiden4Label">Presiden</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-5 mb-3">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/President_Abdurrahman_Wahid_-_Indonesia.jpg/220px-President_Abdurrahman_Wahid_-_Indonesia.jpg"
+                                                                class="rounded-2 object-fit-cover w-100" height="300"
+                                                                alt="Presiden Abdurrahman Wahid">
+                                                        </div>
+                                                        <div class="col-sm-7">
+                                                            <h5 class="mb-3">Abdurrahman Wahid</h5>
+                                                            <p>Dr. (H.C.) K.H. Abdurrahman Wahid (lahir dengan nama
+                                                                Abdurrahman ad-Dakhil; 7 September 1940 – 30 Desember
+                                                                2009), atau yang akrab disapa Gus Dur, adalah tokoh
+                                                                Muslim dan politisi Indonesia yang menjadi Presiden
+                                                                keempat Indonesia dari tahun 1999 hingga 2001. Ia
+                                                                menggantikan Presiden B. J. Habibie setelah dipilih oleh
+                                                                Majelis Permusyawaratan Rakyat (MPR) hasil Pemilu 1999.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a href="https://id.wikipedia.org/wiki/Abdurrahman_Wahid"
+                                                        target="_blank" class="btn btn-sm btn-dark">Lihat
+                                                        Selengkapnya
+                                                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3 mb-3">
+                                    <div class="card rounded-2 shadow-sm border-0">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Megawati_Sukarnoputri_official_portrait.jpg/220px-Megawati_Sukarnoputri_official_portrait.jpg"
+                                            class="card-img-top rounded-top-2 object-fit-cover w-100" height="250"
+                                            alt="Presiden Megawati Sukarnoputri">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Megawati</h5>
+                                            <p class="card-text text-center">(2001-2004)</p>
+                                            <!-- Button trigger modal -->
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <button type="button" class="btn btn-sm btn-outline-dark px-3"
+                                                    data-bs-toggle="modal" data-bs-target="#presiden5">
+                                                    Detail
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="presiden5" tabindex="-1"
+                                        aria-labelledby="presiden5Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="presiden5Label">Presiden</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-5 mb-3">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Megawati_Sukarnoputri_official_portrait.jpg/220px-Megawati_Sukarnoputri_official_portrait.jpg"
+                                                                class="rounded-2 object-fit-cover w-100" height="300"
+                                                                alt="Presiden Megawati Sukarnoputri">
+                                                        </div>
+                                                        <div class="col-sm-7">
+                                                            <h5 class="mb-3">Megawati Sukarnoputri</h5>
+                                                            <p>Prof. Dr. (H.C.) Hj. Diah Permata Megawati Setiawati
+                                                                Soekarnoputri (lahir 23 Januari 1947) adalah Presiden
+                                                                Indonesia yang kelima yang menjabat sejak 23 Juli 2001
+                                                                sampai 20 Oktober 2004. Ia merupakan presiden wanita
+                                                                Indonesia pertama dan putri dari presiden Indonesia
+                                                                pertama, Soekarno, yang kemudian mengikuti jejak ayahnya
+                                                                menjadi Presiden Indonesia.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a href="https://id.wikipedia.org/wiki/Megawati_Soekarnoputri"
+                                                        target="_blank" class="btn btn-sm btn-dark">Lihat
+                                                        Selengkapnya
+                                                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3 mb-3">
+                                    <div class="card rounded-2 shadow-sm border-0">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Susilo_Bambang_Yudhoyono_2009_official_portrait.png/220px-Susilo_Bambang_Yudhoyono_2009_official_portrait.png"
+                                            class="card-img-top rounded-top-2 object-fit-cover w-100" height="250"
+                                            alt="Presiden Susilo Bambang Yudhoyono">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">SBY</h5>
+                                            <p class="card-text text-center">(2004-2014)</p>
+                                            <!-- Button trigger modal -->
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <button type="button" class="btn btn-sm btn-outline-dark px-3"
+                                                    data-bs-toggle="modal" data-bs-target="#presiden6">
+                                                    Detail
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="presiden6" tabindex="-1"
+                                        aria-labelledby="presiden6Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="presiden6Label">Presiden</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-5 mb-3">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Susilo_Bambang_Yudhoyono_2009_official_portrait.png/220px-Susilo_Bambang_Yudhoyono_2009_official_portrait.png"
+                                                                class="rounded-2 object-fit-cover w-100" height="300"
+                                                                alt="Presiden Susilo Bambang Yudhoyono">
+                                                        </div>
+                                                        <div class="col-sm-7">
+                                                            <h5 class="mb-3">Susilo Bambang Yudhoyono</h5>
+                                                            <p>Jenderal TNI (HOR) (Purn.) Prof. Dr. H. Susilo Bambang
+                                                                Yudhoyono, M.A. (lahir 9 September 1949), atau lebih
+                                                                dikenal dengan inisialnya SBY adalah Presiden Indonesia
+                                                                keenam yang menjabat sejak 20 Oktober 2004 sampai 20
+                                                                Oktober 2014. Ia merupakan Presiden pertama di era
+                                                                Reformasi yang terpilih melalui Pemilihan Umum secara
+                                                                langsung. SBY bersama Wakil Presiden Muhammad Jusuf
+                                                                Kalla, terpilih dalam Pemilu Presiden 2004.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a href="https://id.wikipedia.org/wiki/Susilo_Bambang_Yudhoyono"
+                                                        target="_blank" class="btn btn-sm btn-dark">Lihat
+                                                        Selengkapnya
+                                                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3 mb-3">
+                                    <div class="card rounded-2 shadow-sm border-0">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Joko_Widodo_2019_official_portrait.jpg/220px-Joko_Widodo_2019_official_portrait.jpg"
+                                            class="card-img-top rounded-top-2 object-fit-cover w-100" height="250"
+                                            alt="Presiden Joko Widodo">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Joko Widodo</h5>
+                                            <p class="card-text text-center">(2014-Sekarang)</p>
+                                            <!-- Button trigger modal -->
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <button type="button" class="btn btn-sm btn-outline-dark px-3"
+                                                    data-bs-toggle="modal" data-bs-target="#presiden7">
+                                                    Detail
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="presiden7" tabindex="-1"
+                                        aria-labelledby="presiden7Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="presiden7Label">Presiden</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-5 mb-3">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Joko_Widodo_2019_official_portrait.jpg/220px-Joko_Widodo_2019_official_portrait.jpg"
+                                                                class="rounded-2 object-fit-cover w-100" height="300"
+                                                                alt="Presiden Joko Widodo">
+                                                        </div>
+                                                        <div class="col-sm-7">
+                                                            <h5 class="mb-3">Joko Widodo</h5>
+                                                            <p>Ir. H. Joko Widodo lahir 21 Juni 1961 adalah presiden
+                                                                Indonesia yang mulai menjabat sejak tanggal 20 Oktober
+                                                                2014. Terpilih dalam Pemilu Presiden 2014, Jokowi
+                                                                menjadi presiden Indonesia pertama yang bukan berasal
+                                                                dari elite politik atau militer Indonesia. Dia terpilih
+                                                                bersama Wakil Presiden Jusuf Kalla dan kembali terpilih
+                                                                bersama Wakil Presiden Ma'ruf Amin dalam Pemilu Presiden
+                                                                2019.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a href="https://id.wikipedia.org/wiki/Joko_Widodo" target="_blank"
                                                         class="btn btn-sm btn-dark">Lihat
                                                         Selengkapnya
                                                         <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -656,7 +969,358 @@
                 <div>
                     <div class="bd-example-snippet bd-code-snippet">
                         <div class="bd-example m-0 border-0">
-
+                            <div class="row">
+                                <div class="col">
+                                    <p>Saat ini, Indonesia terdiri atas 38 provinsi, 416 kabupaten dan 98 kota, 7.024
+                                        daerah setingkat kecamatan, atau 81.626 daerah setingkat desa.</p>
+                                    <p>Di antara provinsi-provinsi tersebut, sembilan di antaranya memiliki status
+                                        kekhususan dan/atau keistimewaan. Daerah-daerah tersebut ialah Aceh, Daerah
+                                        Khusus Ibukota Jakarta, Daerah Istimewa Yogyakarta, Papua Barat, Papua Barat
+                                        Daya, Papua, Papua Tengah, Papua Pegunungan, dan Papua Selatan.</p>
+                                    <p>Tiap provinsi memiliki DPRD Provinsi dan gubernur, tiap kabupaten memiliki DPRD
+                                        Kabupaten dan bupati, sementara tiap kota memiliki DPRD Kota dan wali kota;
+                                        semuanya dipilih langsung oleh rakyat melalui pemilihan umum. Hal tersebut tidak
+                                        berlaku pada DKI Jakarta yang terbagi atas kabupaten administrasi atau kota
+                                        administrasi yang bukanlah daerah otonom, sehingga DPR Kabupaten atau Kota tidak
+                                        ada di dalam daerah-daerah tersebut, serta bupati dan wali kotanya adalah
+                                        pegawai negeri yang ditunjuk oleh Gubernur DKI Jakarta.</p>
+                                    <p>Indonesia memperbolehkan penamaan lokal/khusus untuk digunakan pada daerah-daerah
+                                        administratif di bawah tingkat kabupaten/kota, sesuai dengan Undang-Undang
+                                        tentang Pemerintahan Daerah. Beberapa contoh di antaranya ialah kalurahan,
+                                        kapanewon, kemantren, gampong, kampung, nagari, pekon, dan distrik.</p>
+                                    <p>Berikut ini merupakan provinsi di Indonesia beserta ibu kotanya:</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr class="align-middle">
+                                                    <th scope="col">Logo</th>
+                                                    <th scope="col">Provinsi</th>
+                                                    <th scope="col">Ibu Kota Provinsi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Coat_of_arms_of_Aceh.svg/59px-Coat_of_arms_of_Aceh.svg.png"
+                                                            alt="Aceh" width="45" height="50" />
+                                                    </td>
+                                                    <td>Aceh</td>
+                                                    <td>Banda Aceh</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Coat_of_arms_of_Bali.svg/60px-Coat_of_arms_of_Bali.svg.png"
+                                                            alt="Bali" width="45" height="50" />
+                                                    </td>
+                                                    <td>Bali</td>
+                                                    <td>Denpasar</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Coat_of_arms_of_Banten.svg/57px-Coat_of_arms_of_Banten.svg.png"
+                                                            alt="Banten" width="45" height="50" />
+                                                    </td>
+                                                    <td>Banten</td>
+                                                    <td>Serang</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Coat_of_arms_of_Bengkulu.svg/47px-Coat_of_arms_of_Bengkulu.svg.png"
+                                                            alt="Bengkulu" width="45" height="50" />
+                                                    </td>
+                                                    <td>Bengkulu</td>
+                                                    <td>Bengkulu</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Coat_of_arms_of_Yogyakarta.svg/46px-Coat_of_arms_of_Yogyakarta.svg.png"
+                                                            alt="Daerah Istimewa Yogyakarta" width="45" height="50" />
+                                                    </td>
+                                                    <td>Daerah Istimewa Yogyakarta</td>
+                                                    <td>Yogyakarta</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/53px-Coat_of_arms_of_Jakarta.svg.png"
+                                                            alt="Daerah Khusus Ibukota Jakarta" width="50"
+                                                            height="50" />
+                                                    </td>
+                                                    <td>Daerah Khusus Ibukota Jakarta</td>
+                                                    <td>DKI Jakarta</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Coat_of_arms_of_Gorontalo.svg/53px-Coat_of_arms_of_Gorontalo.svg.png"
+                                                            alt="Gorontalo" width="45" height="50" />
+                                                    </td>
+                                                    <td>Gorontalo</td>
+                                                    <td>Gorontalo</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Coat_of_arms_of_Jambi.svg/58px-Coat_of_arms_of_Jambi.svg.png"
+                                                            alt="Jambi" width="45" height="50" />
+                                                    </td>
+                                                    <td>Jambi</td>
+                                                    <td>Jambi</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Coat_of_arms_of_West_Java.svg/51px-Coat_of_arms_of_West_Java.svg.png"
+                                                            alt="Jawa Barat" width="45" height="50" />
+                                                    </td>
+                                                    <td>Jawa Barat</td>
+                                                    <td>Bandung</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Coat_of_arms_of_Central_Java.svg/56px-Coat_of_arms_of_Central_Java.svg.png"
+                                                            alt="Jawa Tengah" width="45" height="50" />
+                                                    </td>
+                                                    <td>Jawa Tengah</td>
+                                                    <td>Semarang</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Coat_of_arms_of_East_Java.svg/43px-Coat_of_arms_of_East_Java.svg.png"
+                                                            alt="Jawa Timur" width="45" height="50" />
+                                                    </td>
+                                                    <td>Jawa Timur</td>
+                                                    <td>Surabaya</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Coat_of_arms_of_West_Kalimantan.svg/44px-Coat_of_arms_of_West_Kalimantan.svg.png"
+                                                            alt="Kalimantan Barat" width="45" height="50" />
+                                                    </td>
+                                                    <td>Kalimantan Barat</td>
+                                                    <td>Pontianak</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Coat_of_arms_of_South_Kalimantan.svg/43px-Coat_of_arms_of_South_Kalimantan.svg.png"
+                                                            alt="Kalimantan Selatan" width="45" height="50" />
+                                                    </td>
+                                                    <td>Kalimantan Selatan</td>
+                                                    <td>Banjarbaru</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Coat_of_arms_of_Central_Kalimantan.svg/45px-Coat_of_arms_of_Central_Kalimantan.svg.png"
+                                                            alt="Kalimantan Tengah" width="45" height="50" />
+                                                    </td>
+                                                    <td>Kalimantan Tengah</td>
+                                                    <td>Palangka Raya</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Coat_of_arms_of_East_Kalimantan.svg/49px-Coat_of_arms_of_East_Kalimantan.svg.png"
+                                                            alt="Kalimantan Timur" width="45" height="50" />
+                                                    </td>
+                                                    <td>Kalimantan Timur</td>
+                                                    <td>Samarinda</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Coat_of_arms_of_North_Kalimantan_%282021_version%29.svg/45px-Coat_of_arms_of_North_Kalimantan_%282021_version%29.svg.png"
+                                                            alt="Kalimantan Utara" width="45" height="50" />
+                                                    </td>
+                                                    <td>Kalimantan Utara</td>
+                                                    <td>Tanjung Selor</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Coat_of_arms_of_Bangka_Belitung_Islands.svg/48px-Coat_of_arms_of_Bangka_Belitung_Islands.svg.png"
+                                                            alt="Kepulauan Bangka Belitung" width="45" height="50" />
+                                                    </td>
+                                                    <td>Kepulauan Bangka Belitung</td>
+                                                    <td>Pangkalpinang</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Coat_of_arms_of_Riau_Islands.svg/45px-Coat_of_arms_of_Riau_Islands.svg.png"
+                                                            alt="Kepulauan Riau" width="45" height="50" />
+                                                    </td>
+                                                    <td>Kepulauan Riau</td>
+                                                    <td>Tanjungpinang</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Coat_of_arms_of_Bangka_Belitung_Islands.svg/48px-Coat_of_arms_of_Bangka_Belitung_Islands.svg.png"
+                                                            alt="Kepulauan Bangka Belitung" width="45" height="50" />
+                                                    </td>
+                                                    <td>Kepulauan Bangka Belitung</td>
+                                                    <td>Pangkalpinang</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Coat_of_arms_of_Lampung.svg/40px-Coat_of_arms_of_Lampung.svg.png"
+                                                            alt="Lampung" width="45" height="50" />
+                                                    </td>
+                                                    <td>Lampung</td>
+                                                    <td>Bandar Lampung</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Coat_of_arms_of_Maluku.svg/54px-Coat_of_arms_of_Maluku.svg.png"
+                                                            alt="Maluku" width="45" height="50" />
+                                                    </td>
+                                                    <td>Maluku</td>
+                                                    <td>Ambon</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Coat_of_arms_of_North_Maluku.svg/52px-Coat_of_arms_of_North_Maluku.svg.png"
+                                                            alt="Maluku Utara" width="45" height="50" />
+                                                    </td>
+                                                    <td>Maluku Utara</td>
+                                                    <td>Sofifi</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Coat_of_arms_of_West_Nusa_Tenggara.svg/41px-Coat_of_arms_of_West_Nusa_Tenggara.svg.png"
+                                                            alt="Nusa Tenggara Barat" width="45" height="50" />
+                                                    </td>
+                                                    <td>Nusa Tenggara Barat</td>
+                                                    <td>Mataram</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Coat_of_Arms_of_East_Nusa_Tenggara_NEW.png/57px-Coat_of_Arms_of_East_Nusa_Tenggara_NEW.png"
+                                                            alt="Nusa Tenggara Timur" width="45" height="50" />
+                                                    </td>
+                                                    <td>Nusa Tenggara Timur</td>
+                                                    <td>Kupang</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Coat_of_arms_of_Papua_2.svg/52px-Coat_of_arms_of_Papua_2.svg.png"
+                                                            alt="Papua" width="45" height="50" />
+                                                    </td>
+                                                    <td>Papua</td>
+                                                    <td>Jayapura</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Coat_of_arms_of_West_Papua.svg/42px-Coat_of_arms_of_West_Papua.svg.png"
+                                                            alt="Papua Barat" width="45" height="50" />
+                                                    </td>
+                                                    <td>Papua Barat</td>
+                                                    <td>Manokwari</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo_Papua_Barat_Daya1.png/47px-Logo_Papua_Barat_Daya1.png"
+                                                            alt="Papua Barat Daya" width="45" height="50" />
+                                                    </td>
+                                                    <td>Papua Barat Daya</td>
+                                                    <td>Sorong</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Lambang_Papua_Pegunungan.png/51px-Lambang_Papua_Pegunungan.png"
+                                                            alt="Papua Pegunungan" width="45" height="50" />
+                                                    </td>
+                                                    <td>Papua Pegunungan</td>
+                                                    <td>Jayawijaya</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Lambang_Papua_Selatan.png/45px-Lambang_Papua_Selatan.png"
+                                                            alt="Papua Selatan" width="45" height="50" />
+                                                    </td>
+                                                    <td>Papua Selatan</td>
+                                                    <td>Merauke</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Lambang_Papua_Tengah.png/43px-Lambang_Papua_Tengah.png"
+                                                            alt="Papua Tengah" width="45" height="50" />
+                                                    </td>
+                                                    <td>Papua Tengah</td>
+                                                    <td>Nabire</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Coat_of_arms_of_Riau.svg/41px-Coat_of_arms_of_Riau.svg.png"
+                                                            alt="Riau" width="45" height="50" />
+                                                    </td>
+                                                    <td>Riau</td>
+                                                    <td>Pekanbaru</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Coat_of_arms_of_West_Sulawesi.svg/54px-Coat_of_arms_of_West_Sulawesi.svg.png"
+                                                            alt="Sulawesi Barat" width="45" height="50" />
+                                                    </td>
+                                                    <td>Sulawesi Barat</td>
+                                                    <td>Mamuju</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Coat_of_arms_of_South_Sulawesi.svg/49px-Coat_of_arms_of_South_Sulawesi.svg.png"
+                                                            alt="Sulawesi Selatan" width="45" height="50" />
+                                                    </td>
+                                                    <td>Sulawesi Selatan</td>
+                                                    <td>Makassar</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Coat_of_arms_of_Central_Sulawesi.svg/38px-Coat_of_arms_of_Central_Sulawesi.svg.png"
+                                                            alt="Sulawesi Tengah" width="45" height="50" />
+                                                    </td>
+                                                    <td>Sulawesi Tengah</td>
+                                                    <td>Palu</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Coat_of_arms_of_Southeast_Sulawesi.svg/60px-Coat_of_arms_of_Southeast_Sulawesi.svg.png"
+                                                            alt="Sulawesi Tenggara" width="45" height="50" />
+                                                    </td>
+                                                    <td>Sulawesi Tenggara</td>
+                                                    <td>Kendari</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Coat_of_arms_of_North_Sulawesi.svg/60px-Coat_of_arms_of_North_Sulawesi.svg.png"
+                                                            alt="Sulawesi Utara" width="45" height="50" />
+                                                    </td>
+                                                    <td>Sulawesi Utara</td>
+                                                    <td>Manado</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Coat_of_arms_of_West_Sumatra.svg/52px-Coat_of_arms_of_West_Sumatra.svg.png"
+                                                            alt="Sumatera Barat" width="45" height="50" />
+                                                    </td>
+                                                    <td>Sumatera Barat</td>
+                                                    <td>Padang</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Coat_of_arms_of_South_Sumatra.svg/47px-Coat_of_arms_of_South_Sumatra.svg.png"
+                                                            alt="Sumatera Selatan" width="45" height="50" />
+                                                    </td>
+                                                    <td>Sumatera Selatan</td>
+                                                    <td>Palembang</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <td>
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Coat_of_arms_of_North_Sumatra.svg/48px-Coat_of_arms_of_North_Sumatra.svg.png"
+                                                            alt="Sumatera Utara" width="45" height="50" />
+                                                    </td>
+                                                    <td>Sumatera Utara</td>
+                                                    <td>Medan</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -664,9 +1328,74 @@
         </section>
         <!-- End of government -->
 
+        <!-- Culture and tourism -->
+        <section id="budaya">
+            <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Budaya</h2>
 
-    </div>
-    <!-- End of content -->
+            <article class="my-3" id="pertunjukan">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h4>Pertunjukan</h4>
+                </div>
+
+                <div>
+                    <div class="bd-example-snippet bd-code-snippet">
+                        <div class="bd-example m-0 border-0">
+                            <p>Hingga saat ini, ibu kota negara Republik Indonesia berkedudukan di Daerah Khusus
+                                Ibukota Jakarta. Namun sejak tahun 2019, Pemerintah Indonesia melaksanakan
+                                proses pemindahan ibu kota Indonesia ke Ibu Kota Nusantara, yang direncanakan
+                                akan diresmikan pada tahun 2024.</p>
+                            <p>Semenjak kemerdekaan Indonesia pada tanggal 17 Agustus 1945, ibu kota negara
+                                Indonesia secara de facto berkedudukan di Jakarta. Ibu kota negara sempat
+                                dipindahkan ke Yogyakarta pada tanggal 4 Januari 1946 ketika pasukan
+                                Pemerintahan Sipil Hindia Belanda (NICA) menduduki Jakarta, kemudian ke
+                                Bukittinggi pada tanggal 19 Desember 1948 ketika pemerintah pusat lumpuh karena
+                                ditawannya Presiden Soekarno dan Wakil Presiden Hatta oleh pasukan militer
+                                Belanda dan tampuk pemerintahan dipegang sementara oleh Pemerintahan Darurat
+                                Republik Indonesia (PDRI), lalu kembali lagi ke Yogyakarta pada tanggal 6
+                                Juli 1949 setelah kembalinya Soekarno-Hatta dari penawanan. Pada masa Republik
+                                Indonesia Serikat (RIS), ibu kota Negara Bagian Republik Indonesia berkedudukan
+                                di Yogyakarta sementara ibu kota federal RIS berada di Jakarta. Setelah kembali
+                                ke Negara Kesatuan Republik Indonesia pada tanggal 17 Agustus 1950, ibu kota
+                                negara kembali berkedudukan di Jakarta. Pada tanggal 28 Agustus 1961, Pemerintah
+                                mengeluarkan Peraturan Presiden Nomor 2 Tahun 1961 yang mengukuhkan status
+                                Jakarta sebagai ibu kota negara.</p>
+                            <p>Pada tahun 2019, Presiden Joko Widodo melalui Pemerintah Pusat membuat kajian
+                                rancangan, melakukan pencanangan, dan menentukan letak wilayah dari
+                                ibu kota baru, yaitu sebagian dari wilayah Kabupaten Penajam Paser Utara dan
+                                Kutai Kartanegara. Pemerintah bahkan sempat membentuk tim-tim pelaksana
+                                pemindahan ibu kota pada bulan Januari 2020, yang akan melaksanakan
+                                pembangunan pada pertengahan tahun 2020, tetapi harus ditunda akibat pandemi
+                                Covid-19. Pada tanggal 18 Januari 2022, Dewan Perwakilan Rakyat mengesahkan
+                                Undang-Undang Ibu Kota Negara, yang berisi pembentukan dan garis besar rencana
+                                pembangunan ibu kota baru, yang diberi nama Ibu Kota Nusantara, yang kemudian
+                                diundangkan pada tanggal 15 Februari 2022. Upacara simbolis penyatuan tanah
+                                ketiga puluh empat provinsi di Indonesia saat itu dilakukan oleh Presiden Jokowi
+                                bersama para gubernur dan wakil gubernur se-Indonesia pada tanggal 14 Maret 2022
+                                di Titik Nol Ibu Kota Nusantara.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+        <!-- End of nculture and tourism -->
+    </main>
+    <!-- End of main -->
+
+    <!-- Footer -->
+    <footer class="bd-footer text-bg-dark py-3">
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <span class="fw-medium mt-1">Created by Alfian Hidayat.</span>
+                <div class="d-flex flex-row gap-2">
+                    <a href="#email" class="btn btn-sm btn-light"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#instagram" class="btn btn-sm btn-light"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#overview" class="btn btn-sm btn-light"><i class="fa-solid fa-angle-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer -->
 
     <!-- Bootstrap js bundle with @popper -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
