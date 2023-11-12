@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 5 - Cheatsheet</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/img/UTM.png" type="image/png">
+    <link rel="apple-touch-icon" href="../assets/img/UTM.png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="../assets/fontawesome-icons/css/all.min.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bd-header bg-dark py-3 shadow-sm">
+        <div class="d-none d-lg-block">
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="../assets/img/UTM.png" width="30" height="30" class="me-2" alt="Mercedes-Benz Logo">
+                    <span class="fs-5 fw-bold">My Website</span>
+                </div>
+            </div>
+        </div>
+        <div class="d-lg-none">
+            <div class="container-fluid d-flex justify-content-start align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="../assets/img/UTM.png" width="30" height="30" class="me-2" alt="Mercedes-Benz Logo">
+                    <span class="fs-5 fw-bold">My Website</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of header -->
+
+    <!-- Aside -->
+    <aside class="bd-aside sticky-xl-top text-body-secondary align-self-start mb-3 mb-xl-5 px-2">
+        <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">Daftar Isi</h2>
+        <nav class="small" id="toc">
+            <ul class="list-unstyled">
+                <li class="my-2">
+                    <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse"
+                        aria-expanded="false" data-bs-target="#geografis-collapse"
+                        aria-controls="geografis-collapse">Geografis</button>
+                    <ul class="list-unstyled ps-3 collapse" id="geografis-collapse">
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#iklim">Iklim</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#geologi">Geologi</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#lingkungan-hidup">Lingkungan Hidup</a></li>
+                    </ul>
+                </li>
+                <li class="my-2">
+                    <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse"
+                        aria-expanded="false" data-bs-target="#pemerintahan-collapse"
+                        aria-controls="pemerintahan-collapse">Pemerintahan</button>
+                    <ul class="list-unstyled ps-3 collapse" id="pemerintahan-collapse">
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#sistem-pemerintahan">Sistem Pemerintahan</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#ibu-kota-negara">Ibu Kota Negara</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#kepala-negara">Kepala Negara</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#pembagian-administratif">Pembagian Administratif</a></li>
+                    </ul>
+                </li>
+                <li class="my-2">
+                    <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse"
+                        aria-expanded="false" data-bs-target="#components-collapse"
+                        aria-controls="components-collapse">Components</button>
+                    <ul class="list-unstyled ps-3 collapse" id="components-collapse">
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#accordion">Accordion</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#alerts">Alerts</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#badge">Badge</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#breadcrumb">Breadcrumb</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#buttons">Buttons</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#button-group">Button group</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#card">Card</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#carousel">Carousel</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#dropdowns">Dropdowns</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#list-group">List group</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#modal">Modal</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#navs">Navs</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#navbar">Navbar</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#pagination">Pagination</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#popovers">Popovers</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#progress">Progress</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#scrollspy">Scrollspy</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#spinners">Spinners</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#toasts">Toasts</a></li>
+                        <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                                href="#tooltips">Tooltips</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- End of aside -->
+
+    <!-- Contents -->
+    <div class="bd-cheatsheet container-fluid bg-body">
+        <!-- Overview -->
+        <section id="overview">
+            <h2 class="sticky-xl-top fw-bold"></h2>
+
+            <article class="my-3" id="welcome">
+                <div class="bd-heading sticky-xl-top align-self-start">
+                    <h4></h4>
+                </div>
+
+                <div>
+                    <div class="bd-example-snippet bd-code-snippet">
+                        <div class="bd-example m-0 border-0">
+                            <h1 class="text-center mb-4">INDONESIA</h2>
+                                <div id="carouselOverview" class="carousel slide" data-bs-ride="true">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselOverview" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselOverview" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselOverview" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/Carousel-1.png" class="d-block w-100 rounded-2"
+                                                alt="carousel-1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/Carousel-2.png" class="d-block w-100 rounded-2"
+                                                alt="carousel-2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/Carousel-3.png" class="d-block w-100 rounded-2"
+                                                alt="carousel-3">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselOverview" data-bs-slide="prev">
+                                        <span class="custom-carousel-icon text-bg-light rounded-2" aria-hidden="true"><i
+                                                class="fa-solid fa-angle-left"></i></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselOverview" data-bs-slide="next">
+                                        <span class="custom-carousel-icon text-bg-light rounded-2" aria-hidden="true"><i
+                                                class="fa-solid fa-angle-right"></i></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <div class="bd-example-snippet bd-code-snippet">
+                        <div class="bd-example m-0 border-0">
+                            <p>Indonesia merupakan negara terluas ke-14 sekaligus negara kepulauan terbesar di dunia
+                                dengan luas wilayah sebesar 1.904.569 km², serta negara dengan pulau terbanyak ke-6
+                                di dunia, dengan jumlah 17.504 pulau. Nama alternatif yang dipakai untuk kepulauan
+                                Indonesia disebut Nusantara. Selain itu, Indonesia juga menjadi negara berpenduduk
+                                terbanyak ke-4 di dunia dengan penduduk mencapai 277.749.853 jiwa pada tahun 2022,
+                                serta negara dengan penduduk beragama Islam terbanyak di dunia, dengan penganut lebih
+                                dari 238.875.159 jiwa atau sekitar 86,9%. Indonesia adalah negara multiras,
+                                multietnis, dan multikultural di dunia.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- End of overview -->
+
+        <!-- Geographic -->
+        <section id="geografis">
+            <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Geografis</h2>
+
+            <article class="my-3" id="ringkasan-geografis">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h4></h4>
+                </div>
+
+                <div>
+                    <div class="bd-example-snippet bd-code-snippet">
+                        <div class="bd-example m-0 border-0">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <p>Indonesia merupakan negara kepulauan terbesar di dunia yang berada di Asia
+                                        Tenggara,
+                                        dan terletak di antara benua Asia dan benua Australia/Oseania, serta di antara
+                                        Samudra
+                                        Hindia dan Samudra Pasifik. Negara ini memiliki 17.504 pulau yang menyebar di
+                                        sekitar
+                                        khatulistiwa; sebanyak 16.056 pulau telah dibakukan namanya, dan sekitar 6.000
+                                        pulau tidak berpenghuni. Pulau-pulau besar di Indonesia yaitu Sumatra, Jawa,
+                                        Kalimantan (berbagi dengan Malaysia dan Brunei Darussalam), Sulawesi, dan Papua
+                                        (berbagi
+                                        dengan Papua Nugini).</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <figure class="figure">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Gunung_Palung_Jungle.jpg/250px-Gunung_Palung_Jungle.jpg"
+                                            class="figure-img img-fluid rounded-2 shadow-sm object-fit-cover w-100"
+                                            alt="Hutan Hujan">
+                                        <figcaption class="figure-caption text-center">Hutan hujan di Taman Nasional
+                                            Gunung
+                                            Palung, Kalimantan Barat
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <p>Indonesia berada pada koordinat antara antara 6° 04' 30" LU dan 11° 00' 36" LS
+                                        serta
+                                        antar 94° 58' 21" dan 141° 01' 10" BT, yang membentang sepanjang 5.120 kilometer
+                                        (3.181 mil) dari timur ke barat serta 1.760 kilometer (1.094 mil) dari utara ke
+                                        selatan. Luas daratan Indonesia adalah 1.916.906,77 km², sementara luas
+                                        perairannya sekitar 3.110.000 km² dengan garis pantai sepanjang 108 ribu km.
+                                        Batas
+                                        wilayah Indonesia diukur dari kepulauan dengan menggunakan teritorial laut 12
+                                        mil laut
+                                        serta zona ekonomi eksklusif 200 mil laut, searah penjuru mata angin, yaitu:</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered">
+                                            <tr>
+                                                <td>Utara</td>
+                                                <td>Malaysia dengan perbatasan sepanjang 1.782 km, Singapura, Filipina,
+                                                    dan
+                                                    Laut Tiongkok Selatan</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Selatan</td>
+                                                <td>Australia, Timor Leste, dan Samudra Hindia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Timur</td>
+                                                <td>Papua Nugini dengan perbatasan sepanjang 820 km, Timor Leste, dan
+                                                    Samudra Pasifik</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Barat</td>
+                                                <td>Samudra Hindia</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="my-3" id="iklim">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h4>Iklim</h4>
+                </div>
+
+                <div>
+                    <div class="bd-example-snippet bd-code-snippet">
+                        <div class="bd-example m-0 border-0">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <figure class="figure mb-3">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Koppen-Geiger_Map_IDN_present.svg/500px-Koppen-Geiger_Map_IDN_present.svg.png"
+                                            class="figure-img img-fluid rounded-2 shadow-sm object-fit-cover w-100"
+                                            alt="Peta Klasifikasi Iklim">
+                                        <figcaption class="figure-caption text-center">Peta klasifikasi Iklim Köppen
+                                            Indonesia
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p>Secara umum, Indonesia beriklim tropis (kelompok A dalam klasifikasi iklim
+                                        Köppen;
+                                        meskipun ada wilayah dengan tipe iklim yang berbeda). Perairan yang hangat di
+                                        wilayah Indonesia sangat berperan dalam menjaga suhu di darat tetap konstan,
+                                        dengan
+                                        rerata suhu di wilayah pesisir sebesar 28 °C, di wilayah pedalaman dan dataran
+                                        tinggi
+                                        sebesar 26 °C , serta di wilayah pegunungan sebesar 23 °C. Kelembapan berkisar
+                                        antara 70
+                                        hingga 90%.</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <p>Faktor utama yang memengaruhi iklim Indonesia bukanlah suhu udara ataupun tekanan
+                                        udara, melainkan curah hujan. Variasi musim di Indonesia, yaitu musim hujan dan
+                                        musim kemarau, berkaitan dengan pergerakan angin muson. Angin muson barat yang
+                                        bertiup dari Asia ke Australia melalui Indonesia pada bulan Oktober hingga
+                                        Februari mengakibatkan curah hujan yang tinggi, terutama di Indonesia bagian
+                                        barat. Sementara itu, angin muson timur yang bergerak ke arah sebaliknya pada
+                                        bulan April hingga Agustus tidak banyak membawa uap air dan menurunkan hujan.
+                                        Selain itu, ada pula musim peralihan ketika matahari melintasi khatulistiwa yang
+                                        mengakibatkan angin bertiup lemah dan bergerak tak menentu. Meskipun
+                                        demikian, tidak semua wilayah Indonesia memiliki pola curah hujan yang sama.
+                                        Selain daerah musonal, ada pula daerah ekuatorial yang dipengaruhi daerah
+                                        pertemuan angin antartropis, serta daerah lokal yang polanya berkebalikan dengan
+                                        pola musonal.</p>
+                                    <p>Beberapa penelitian memproyeksikan Indonesia terdampak perubahan iklim. Dampak
+                                        buruk yang ditimbulkan di antaranya kenaikan suhu rata-rata sekitar 1 °C pada
+                                        pertengahan abad ini akibat emisi yang tidak berkurang, peningkatan frekuensi
+                                        kekeringan dan kekurangan pangan (akibat perubahan curah hujan dan pola musim
+                                        yang memengaruhi pertanian), serta berbagai penyakit dan kebakaran hutan.
+                                        Naiknya permukaan air laut juga mengancam sebagian besar penduduk Indonesia yang
+                                        tinggal di daerah pesisir. Penduduk prasejahtera mungkin merupakan kelompok yang
+                                        paling terpengaruh oleh perubahan iklim.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="my-3" id="geologi">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h4>Geologi</h4>
+                </div>
+
+                <div>
+                    <div class="bd-example-snippet bd-code-snippet">
+                        <div class="bd-example m-0 border-0">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p>Secara tektonik, sebagian besar wilayah Indonesia sangat tidak stabil karena
+                                        lokasinya menjadi pertemuan dari beberapa lempeng tektonik, seperti lempeng
+                                        Indo-Australia, Lempeng Pasifik, dan Lempeng Eurasia. Negara ini terletak di
+                                        Cincin Api Pasifik sehingga memiliki banyak gunung berapi dan sering mengalami
+                                        gempa bumi. Busur vulkanik berjajar mulai dari Sumatra, Jawa, Bali dan Nusa
+                                        Tenggara, dan kemudian ke Kepulauan Banda di Maluku hingga ke timur laut
+                                        Sulawesi. Dari sekitar 400 gunung berapi, kurang lebih 130 di antaranya
+                                        masih aktif.</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <figure class="figure mb-3">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Map_indonesia_volcanoes.gif/400px-Map_indonesia_volcanoes.gif"
+                                            class="figure-img img-fluid rounded-2 shadow-sm object-fit-cover w-100"
+                                            alt="Peta Wilayah Gunung Berapi Indonesia">
+                                        <figcaption class="figure-caption text-center">Gunung-gunung berapi utama di
+                                            Indonesia, yang merupakan bagian dari Cincin Api Pasifik
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <p>Sebuah letusan supervulkan pada sekitar 77.000 SM yang membentuk Danau Toba
+                                        dipercaya mengakibatkan musim dingin vulkanik dan penurunan suhu dunia selama
+                                        bertahun-tahun. Letusan Tambora pada tahun 1815 dan letusan Krakatau pada
+                                        1883 juga termasuk letusan gunung terbesar yang tercatat sepanjang
+                                        sejarah. Gempa bumi berdorongan besar yang berdampak ke Indonesia dan
+                                        terjadi belum lama ini adalah gempa bumi dan tsunami Samudra Hindia 2004.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="my-3" id="lingkungan-hidup">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h4>Lingkungan Hidup</h4>
+                </div>
+
+                <div>
+                    <div class="bd-example-snippet bd-code-snippet">
+                        <div class="bd-example m-0 border-0">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-5">
+                                    <figure class="figure mt-3">
+                                        <div class="row">
+                                            <div class="col-6 mb-2">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Rafflesia_arnoldi_2013-12-31_21-48.JPG/162px-Rafflesia_arnoldi_2013-12-31_21-48.JPG"
+                                                    class="rounded-2 shadow-sm object-fit-cover w-100" height="150"
+                                                    alt="Padma">
+                                            </div>
+                                            <div class="col-6 mb-2">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Man_of_the_woods.JPG/122px-Man_of_the_woods.JPG"
+                                                    class="rounded-2 shadow-sm object-fit-cover w-100" height="150"
+                                                    alt="Orang Utan">
+                                            </div>
+                                            <div class="col-6 mb-2">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Komodo_dragon_%28Varanus_komodoensis%29.jpg/130px-Komodo_dragon_%28Varanus_komodoensis%29.jpg"
+                                                    class="rounded-2 shadow-sm object-fit-cover w-100" height="150"
+                                                    alt="Cenderawasih">
+                                            </div>
+                                            <div class="col-6 mb-2">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Paradisaea_apoda_-Bali_Bird_Park-6.jpg/154px-Paradisaea_apoda_-Bali_Bird_Park-6.jpg"
+                                                    class="rounded-2 shadow-sm object-fit-cover w-100" height="150"
+                                                    alt="Komodo">
+                                            </div>
+                                        </div>
+                                        <figcaption class="figure-caption text-center">Spesies-spesies flora dan fauna
+                                            yang endemik di Indonesia. Searah jarum jam dari kiri atas: Padma raksasa,
+                                            orang utan, cenderawasih kuning-besar, dan komodo
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 col-lg-7">
+                                    <p>Wilayah Indonesia memiliki keanekaragaman makhluk hidup yang tinggi sehingga
+                                        dikelompokkan sebagai salah satu dari 17 negara megadiversitas oleh Conservation
+                                        International. Dari sudut pandang wilayah biogeografi, Indonesia termasuk
+                                        dalam wilayah Malesia. Flora dan faunanya merupakan campuran dari spesies khas
+                                        Asia
+                                        dan Australasia. Alfred Russel Wallace, seorang ahli sejarah alam,
+                                        menghipotesiskan
+                                        sebuah garis pemisah (yang kemudian disebut garis Wallace) untuk membedakan
+                                        organisme yang berasal dari Asia (Paparan Sunda) dan Australia (Paparan Sahul).
+                                        Kawasan biogeografi yang menjadi zona transisi di antara kedua paparan ini
+                                        disebut
+                                        Wallacea. Selain itu, garis Weber dan garis Lydekker juga digunakan untuk
+                                        menetapkan batas biogeografi Indonesia.</p>
+                                    <p>Indonesia memiliki sekitar 10% dari seluruh spesies tumbuhan berbunga di Bumi
+                                        (sebanyak 25.000 spesies, 55% di antaranya endemik di Indonesia). Negara ini
+                                        juga memiliki sekitar 12% spesies mamalia di Bumi (515 spesies) sehingga
+                                        menempati peringkat kedua pada keanekaragaman mamalia setelah Brasil. Indonesia
+                                        menempati peringkat keempat pada keanekaragaman spesies reptil (781 spesies) dan
+                                        primata (35 spesies), peringkat kelima pada keanekaragaman spesies burung (1.592
+                                        spesies), serta peringkat keenam pada keanekaragaman spesies amfibi (270
+                                        spesies).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- End of geographic -->
+
+        <!-- Government  -->
+        <section id="pemerintahan">
+            <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Pemerintahan</h2>
+
+            <article class="my-3" id="sistem-pemerintahan">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h4>Sistem Pemerintahan</h4>
+                </div>
+
+                <div>
+                    <div class="bd-example-snippet bd-code-snippet">
+                        <div class="bd-example m-0 border-0">
+                            <div class="row">
+                                <div class="col-sm-8 mb-3">
+                                    <p>Indonesia merupakan negara kesatuan yang menjalankan pemerintahan republik
+                                        presidensial multipartai yang demokratis. Konstitusi Indonesia adalah
+                                        Undang-Undang
+                                        Dasar Negara Republik Indonesia Tahun 1945 (UUD 1945) yang pada era reformasi
+                                        mengalami empat kali amendemen sehingga membawa perubahan besar pada kekuasaan
+                                        legislatif, eksekutif, dan yudikatif. Salah satu perubahan utama adalah
+                                        pendelegasian kekuasaan dan wewenang kepada berbagai entitas regional sambil
+                                        tetap
+                                        menjadi negara kesatuan.</p>
+                                    <p>Kekuasaan eksekutif dipegang oleh presiden yang dibantu oleh wakil presiden dan
+                                        kabinet. Presiden Indonesia merupakan kepala negara dan kepala pemerintahan,
+                                        sekaligus panglima tertinggi Tentara Nasional Indonesia. Presiden dan wakil
+                                        presiden dapat menjabat selama lima tahun dan dapat dipilih kembali hanya untuk
+                                        satu kali masa jabatan. Joko Widodo dan Ma'ruf Amin adalah pasangan
+                                        presiden dan wakil presiden yang terpilih untuk masa jabatan 2019–2024. Mereka
+                                        memimpin Kabinet Indonesia Maju yang terdiri atas 34 menteri dan sejumlah
+                                        pejabat setingkat menteri.</p>
+                                    <p>Lembaga perwakilan tertinggi yaitu Majelis Permusyawaratan Rakyat (MPR), yang
+                                        berwenang mengubah dan menetapkan konstitusi, serta melantik dan memberhentikan
+                                        presiden dan/atau wakil presiden. Lembaga ini berbentuk bikameral yang
+                                        terdiri dari 575 anggota Dewan Perwakilan Rakyat (DPR) yang berasal dari partai
+                                        politik, ditambah dengan 136 anggota Dewan Perwakilan Daerah (DPD) yang
+                                        merupakan wakil provinsi dari jalur independen. Anggota DPR dan DPD dipilih
+                                        melalui pemilihan umum dengan masa jabatan lima tahun. Fungsi yang dijalankan
+                                        oleh DPR yaitu legislasi (membentuk undang-undang), anggaran (membahas dan
+                                        menyetujui Anggaran Pendapatan dan Belanja Negara), dan pengawasan (mengawasi
+                                        kinerja pemerintah), sedangkan DPD merupakan lembaga legislatif yang
+                                        lebih dikhususkan pada pengelolaan daerah. Saat ini, MPR diketuai oleh
+                                        Bambang Soesatyo, DPR diketuai oleh Puan Maharani, sedangkan DPD
+                                        diketuai oleh La Nyalla Mattalitti.</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <figure class="figure mb-3">
+                                        <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/5f/Gedung_MPR-DPR.PNG/250px-Gedung_MPR-DPR.PNG"
+                                            class="figure-img img-fluid rounded-2 shadow-sm object-fit-cover w-100"
+                                            alt="Gedung MPR">
+                                        <figcaption class="figure-caption text-center">Gedung MPR/DPR dalam Kompleks
+                                            Parlemen Republik Indonesia
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="figure mb-3">
+                                        <img src="https://upload.wikimedia.org/wikipedia/id/thumb/9/98/Istana_Negara.JPG/250px-Istana_Negara.JPG"
+                                            class="figure-img img-fluid rounded-2 shadow-sm object-fit-cover w-100"
+                                            alt="Gedung Istana Negara">
+                                        <figcaption class="figure-caption text-center">Gedung Istana Negara, salah satu
+                                            dari enam Istana Kepresidenan di Indonesia
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="my-3" id="ibu-kota-negara">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h4>Ibu Kota Negara</h4>
+                </div>
+
+                <div>
+                    <div class="bd-example-snippet bd-code-snippet">
+                        <div class="bd-example m-0 border-0">
+                            <p>Hingga saat ini, ibu kota negara Republik Indonesia berkedudukan di Daerah Khusus
+                                Ibukota Jakarta. Namun sejak tahun 2019, Pemerintah Indonesia melaksanakan
+                                proses pemindahan ibu kota Indonesia ke Ibu Kota Nusantara, yang direncanakan
+                                akan diresmikan pada tahun 2024.</p>
+                            <p>Semenjak kemerdekaan Indonesia pada tanggal 17 Agustus 1945, ibu kota negara
+                                Indonesia secara de facto berkedudukan di Jakarta. Ibu kota negara sempat
+                                dipindahkan ke Yogyakarta pada tanggal 4 Januari 1946 ketika pasukan
+                                Pemerintahan Sipil Hindia Belanda (NICA) menduduki Jakarta, kemudian ke
+                                Bukittinggi pada tanggal 19 Desember 1948 ketika pemerintah pusat lumpuh karena
+                                ditawannya Presiden Soekarno dan Wakil Presiden Hatta oleh pasukan militer
+                                Belanda dan tampuk pemerintahan dipegang sementara oleh Pemerintahan Darurat
+                                Republik Indonesia (PDRI), lalu kembali lagi ke Yogyakarta pada tanggal 6
+                                Juli 1949 setelah kembalinya Soekarno-Hatta dari penawanan. Pada masa Republik
+                                Indonesia Serikat (RIS), ibu kota Negara Bagian Republik Indonesia berkedudukan
+                                di Yogyakarta sementara ibu kota federal RIS berada di Jakarta. Setelah kembali
+                                ke Negara Kesatuan Republik Indonesia pada tanggal 17 Agustus 1950, ibu kota
+                                negara kembali berkedudukan di Jakarta. Pada tanggal 28 Agustus 1961, Pemerintah
+                                mengeluarkan Peraturan Presiden Nomor 2 Tahun 1961 yang mengukuhkan status
+                                Jakarta sebagai ibu kota negara.</p>
+                            <p>Pada tahun 2019, Presiden Joko Widodo melalui Pemerintah Pusat membuat kajian
+                                rancangan, melakukan pencanangan, dan menentukan letak wilayah dari
+                                ibu kota baru, yaitu sebagian dari wilayah Kabupaten Penajam Paser Utara dan
+                                Kutai Kartanegara. Pemerintah bahkan sempat membentuk tim-tim pelaksana
+                                pemindahan ibu kota pada bulan Januari 2020, yang akan melaksanakan
+                                pembangunan pada pertengahan tahun 2020, tetapi harus ditunda akibat pandemi
+                                Covid-19. Pada tanggal 18 Januari 2022, Dewan Perwakilan Rakyat mengesahkan
+                                Undang-Undang Ibu Kota Negara, yang berisi pembentukan dan garis besar rencana
+                                pembangunan ibu kota baru, yang diberi nama Ibu Kota Nusantara, yang kemudian
+                                diundangkan pada tanggal 15 Februari 2022. Upacara simbolis penyatuan tanah
+                                ketiga puluh empat provinsi di Indonesia saat itu dilakukan oleh Presiden Jokowi
+                                bersama para gubernur dan wakil gubernur se-Indonesia pada tanggal 14 Maret 2022
+                                di Titik Nol Ibu Kota Nusantara.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="my-3" id="kepala-negara">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h4>Kepala Negara</h4>
+                </div>
+
+                <div>
+                    <div class="bd-example-snippet bd-code-snippet">
+                        <div class="bd-example m-0 border-0">
+                            <div class="row justify-content-center">
+                                <div class="col col-lg-3 mb-3">
+                                    <div class="card rounded-2 shadow-sm border-0">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Presiden_Sukarno.jpg/175px-Presiden_Sukarno.jpg"
+                                            class="card-img-top rounded-top-2 object-fit-cover w-100" height="250"
+                                            alt="Presiden Soekarno">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Soekarno</h5>
+                                            <p class="card-text text-center">(1945-1967)</p>
+                                            <!-- Button trigger modal -->
+                                            <div class="d-flex justify-content-center mt-3">
+                                                <button type="button" class="btn btn-sm btn-outline-dark px-3"
+                                                    data-bs-toggle="modal" data-bs-target="#presiden1">
+                                                    Detail
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="presiden1" tabindex="-1"
+                                        aria-labelledby="presiden1Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="presiden1Label">Presiden</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-4 mb-3">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Presiden_Sukarno.jpg/175px-Presiden_Sukarno.jpg"
+                                                                class="rounded-2 object-fit-cover w-100" height="250"
+                                                                alt="Presiden Soekarno">
+                                                        </div>
+                                                        <div class="col-sm-8">
+                                                            <h5 class="mb-3">Soekarno</h5>
+                                                            <p>Dr. (H.C.) Ir. H. Soekarno adalah
+                                                                Presiden pertama Republik Indonesia yang menjabat pada
+                                                                kurun waktu 1945–1967. Ia adalah seorang tokoh
+                                                                perjuangan yang berperan penting dalam memerdekakan
+                                                                bangsa Indonesia dari kolonialisme Belanda.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a href="https://id.wikipedia.org/wiki/Soekarno" target="_blank"
+                                                        class="btn btn-sm btn-dark">Lihat
+                                                        Selengkapnya
+                                                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="my-3" id="pembagian-administratif">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+                    <h4>Pembagian Administratif</h4>
+                </div>
+
+                <div>
+                    <div class="bd-example-snippet bd-code-snippet">
+                        <div class="bd-example m-0 border-0">
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- End of government -->
+
+
+    </div>
+    <!-- End of content -->
+
+    <!-- Bootstrap js bundle with @popper -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
