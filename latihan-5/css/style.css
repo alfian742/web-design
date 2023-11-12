@@ -184,6 +184,10 @@ body {
     .bd-cheatsheet .bd-heading {
         z-index: 1;
     }
+
+    .embed-video {
+        height: 576px;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -197,5 +201,9 @@ body {
         height: 40px;
         width: 40px;
         font-size: 28px;
+    }
+
+    .embed-video {
+        height: 315px;
     }
 }

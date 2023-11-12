@@ -7,5 +7,6 @@ Daftar Tugas:
 2. Navbar (Navigation bar)
 3. Dashboard
 4. Album
+5. Cheatsheet
 
 Preview tugas dapat diakses melalui link berikut: https://alfian742.github.io/web-design/
