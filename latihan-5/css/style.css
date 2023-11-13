@@ -207,3 +207,9 @@ body {
         height: 315px;
     }
 }
+
+@media (max-width: 512px) {
+    .fs-custom {
+        font-size: 12px;
+    }
+}
