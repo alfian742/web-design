@@ -74,7 +74,6 @@ body {
     ;
 }
 
-
 /* Examples */
 .scrollspy-example {
     height: 200px;
@@ -90,6 +89,18 @@ body {
 [id="dropdowns"] .bd-example .dropend,
 [id="dropdowns"] .bd-example .dropstart {
     margin: 0 1rem 1rem 0;
+}
+
+.card-custom {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100% !important;
+    height: 400px;
+}
+
+.modal-img-custom {
+    height: 250px;
 }
 
 /* Layout */
@@ -183,6 +194,16 @@ body {
     }
 }
 
+@media (min-width: 1400px) {
+    .card-custom {
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100% !important;
+        height: 500px;
+    }
+}
+
 @media (max-width: 1199px) {
     .bd-header {
         background-image: url('../img/header-background.png');
@@ -192,6 +213,12 @@ body {
 
     .embed-video {
         height: 315px;
+    }
+}
+
+@media (max-width: 575px) {
+    .modal-img-custom {
+        height: 400px;
     }
 }
 
