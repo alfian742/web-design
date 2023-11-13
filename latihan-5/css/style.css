@@ -92,13 +92,6 @@ body {
     margin: 0 1rem 1rem 0;
 }
 
-.custom-carousel-icon {
-    height: 40px;
-    width: 40px;
-    font-size: 28px;
-    padding-bottom: 2.75rem;
-}
-
 /* Layout */
 @media (min-width: 1200px) {
     body {
@@ -197,12 +190,6 @@ body {
         background-repeat: no-repeat;
     }
 
-    .custom-carousel-icon {
-        height: 40px;
-        width: 40px;
-        font-size: 28px;
-    }
-
     .embed-video {
         height: 315px;
     }
@@ -210,6 +197,6 @@ body {
 
 @media (max-width: 512px) {
     .fs-custom {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
