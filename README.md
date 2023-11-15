@@ -5,7 +5,7 @@ Dalam pengerjaan tugas menggunakan UI Framework Bootstrap v5.3.2 yang dapat diak
 Daftar Tugas:
 1. Grid
 2. Navbar (Navigation bar)
-3. Dashboard
+3. Sidebar
 4. Album
 5. Cheatsheet
 
