@@ -78,7 +78,9 @@
                     </div>
                     <div class="col col-lg-3 px-4 pb-4">
                         <a href="latihan-6/staff-data.php" target="_blank"
-                            class="btn btn-outline-secondary border-0 shadow-sm rounded-4 w-100 h-100">
+                            class="btn btn-outline-secondary border-0 shadow-sm rounded-4 w-100 h-100"
+                            data-bs-toggle="tooltip"
+                            data-bs-title="Hanya dapat di running pada server! Gunakan XAMPP atau sejenisnya.">
                             <div class="fs-3 fw-medium">Tugas 6</div>
                             <div class="fs-5 pb-2">Form</div>
                         </a>
@@ -102,6 +104,10 @@
 
     <!-- Bootstrap js bundle with @popper -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 
 </html>
