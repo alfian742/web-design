@@ -31,7 +31,7 @@ include 'template/_header.php';
 
                     <div class="row">
                         <div class="col-sm-3">
-                            <img src="img/<?= $result['foto']; ?>" alt="<?= $result['nama']; ?>" height="200" width="200" class="rounded-2 shadow-sm object-fit-cover d-block mx-auto mb-4">
+                            <img src="img/<?= $result['foto']; ?>" alt="<?= $result['nama']; ?>" height="200" width="200" class="rounded-2 shadow-sm object-fit-cover img-detail">
                         </div>
                         <div class="col-sm-9">
                             <div class="table-responsive">

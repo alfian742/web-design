@@ -5,12 +5,20 @@ include 'template/_header.php';
 
 include 'template/_connection.php';
 
+// Jumlah produk
 $produk = mysqli_query($db, "SELECT COUNT(*) AS jumlah_produk FROM tb_produk");
 $jumlah_produk = mysqli_fetch_array($produk);
 
-$order = mysqli_query($db, "SELECT COUNT(*) AS jumlah_order FROM tb_order");
-$jumlah_order = mysqli_fetch_array($order);
+// Total order
+$order = mysqli_query($db, "SELECT * FROM tb_order AS o LEFT JOIN tb_konsumen AS k ON o.nik_konsumen = k.nik LEFT JOIN tb_produk AS p ON o.id_produk = p.id_produk");
+$total_order = 0;
+if ($order) {
+    while ($jumlah_order = mysqli_fetch_array($order)) {
+        $total_order += $jumlah_order['jumlah_pesanan'] * $jumlah_order['harga'];
+    }
+}
 
+// Jumlah konsumen
 $konsumen = mysqli_query($db, "SELECT COUNT(*) AS jumlah_konsumen FROM tb_konsumen");
 $jumlah_konsumen = mysqli_fetch_array($konsumen);
 ?>
@@ -41,7 +49,7 @@ $jumlah_konsumen = mysqli_fetch_array($konsumen);
                     <div class="d-flex flex-wrap align-items-center justify-content-between">
                         <div class="d-flex flex-column gap-1">
                             <h4 class="card-title">Order</h4>
-                            <span class="text-muted"><?= $jumlah_order['jumlah_order']; ?></span>
+                            <span class="text-muted"><?= "IDR " . number_format($total_order, 0, "", ","); ?></span>
                         </div>
                         <p class="fs-2 mt-3"><i class="fa-solid fa-table"></i></p>
                     </div>
@@ -67,7 +75,7 @@ $jumlah_konsumen = mysqli_fetch_array($konsumen);
         <div class="col mb-4">
             <div class="card rounded-4 border-0 shadow-sm">
                 <div class="card-body p-4">
-                    <h4 class="h4 mb-4">Pendapatan <?= date('Y'); ?></h4>
+                    <h4 class="h4 mb-4">Pendapatan 2023 (IDR)</h4>
                     <canvas class="mb-4 w-100" id="myChart" width="900" height="400"></canvas>
                 </div>
             </div>
@@ -97,8 +105,6 @@ $jumlah_konsumen = mysqli_fetch_array($konsumen);
                             </thead>
                             <tbody>
                                 <?php
-                                include 'template/_connection.php';
-
                                 $sql = "SELECT * FROM tb_order AS o
                                         LEFT JOIN tb_konsumen AS k ON o.nik_konsumen = k.nik
                                         LEFT JOIN tb_produk AS p ON o.id_produk = p.id_produk 
@@ -145,6 +151,63 @@ $jumlah_konsumen = mysqli_fetch_array($konsumen);
 
 <!-- Chart.js -->
 <script src="js/chart.js"></script>
-<script src="js/script.js"></script>
+
+<?php
+// Sintaks SQL
+$sql = "SELECT * FROM tb_order AS o
+        LEFT JOIN tb_konsumen AS k ON o.nik_konsumen = k.nik
+        LEFT JOIN tb_produk AS p ON o.id_produk = p.id_produk";
+
+$order = mysqli_query($db, $sql);
+
+// Inisialisasi array untuk label bulan dan data total harga
+$labels = [
+    'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',
+    'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
+];
+
+// Inisialisasi array untuk data total harga per bulan
+$totalHargaData = array_fill(0, 12, 0);
+
+// Iterasi melalui hasil query
+while ($row = mysqli_fetch_array($order)) {
+    // Ambil bulan dari tanggal_order (misalnya, jika tanggal_order adalah format tanggal)
+    $bulan = date('n', strtotime($row['tanggal_order'])) - 1; // -1 karena indeks array dimulai dari 0
+
+    // Hitung total harga
+    $total_harga = $row['jumlah_pesanan'] * $row['harga'];
+
+    // Tambahkan total harga ke array data total harga sesuai dengan bulan
+    $totalHargaData[$bulan] += $total_harga;
+}
+?>
+
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: <?= json_encode($labels); ?>,
+            datasets: [{
+                data: <?= json_encode($totalHargaData); ?>,
+                lineTension: 0,
+                backgroundColor: 'transparent',
+                borderColor: '#007bff',
+                borderWidth: 4,
+                pointBackgroundColor: '#007bff'
+            }]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    boxPadding: 3
+                }
+            }
+        }
+    });
+</script>
 
 <?php include 'template/_footer.php'; ?>

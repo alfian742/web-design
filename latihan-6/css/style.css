@@ -55,3 +55,35 @@
 .custom-rounded {
     border-radius: 1rem 0 0.5rem 0;
 }
+
+.img-detail {
+    width: 180px;
+    height: 180px;
+    margin-top: 0.8rem;
+}
+
+.img-preview {
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 575px) {
+
+    .img-detail,
+    .img-preview {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 991px) {
+    .img-detail {
+        width: 120px;
+        height: 120px;
+        margin-top: 0.8rem;
+    }
+}
