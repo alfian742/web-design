@@ -12,6 +12,6 @@ Daftar Tugas:
 3. Sidebar
 4. Album
 5. Cheatsheet
-6. Form (*Note: Implementasi CRUD PHP Prosedural. Hanya dapat di running pada server, silahkan gunakan XAMPP atau sejenisnya.)
+6. Form (Implementasi CRUD PHP Prosedural. Hanya dapat di running pada server, silahkan gunakan XAMPP atau sejenisnya.)
 
 Preview tugas dapat diakses melalui link berikut: https://alfian742.github.io/web-design/
