@@ -1,6 +1,10 @@
 # Tugas Mata Kuliah Desain Web Interaktif
 
-Dalam pengerjaan tugas menggunakan UI Framework Bootstrap v5.3.2 yang dapat diakses melalui link berikut: https://getbootstrap.com/docs/5.3/getting-started/introduction/
+Dalam pengerjaan tugas menggunakan:
+1. UI Framework Bootstrap v5.3.2, dapat diakses melalui link berikut: https://getbootstrap.com/docs/5.3/getting-started/introduction/
+2. Fontawesome icon plugin v6.4.2, dapat diakses melalui link berikut: https://fontawesome.com/
+3. DataTables plugin v4.6.0, dapat diakses melalui link berikut: https://datatables.net/
+4. Select2 plugin v4.1.0, dapat diakses melalui link berikut: https://select2.org/
 
 Daftar Tugas:
 1. Grid
