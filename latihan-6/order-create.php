@@ -49,7 +49,7 @@ include 'template/_header.php';
                     }
                     ?>
 
-                    <form action="" method="POST">
+                    <form action="" method="POST" class="needs-validation" novalidate>
                         <div class="row mb-4">
                             <label for="id_order" class="col-sm-3 col-form-label">ID Order</label>
                             <div class="col-sm-9">
@@ -89,6 +89,12 @@ include 'template/_header.php';
                             <label for="jumlah_pesanan" class="col-sm-3 col-form-label">Jumlah Pesanan</label>
                             <div class="col-sm-9">
                                 <input type="number" class="form-control" id="jumlah_pesanan" name="jumlah_pesanan" min="0" max="100" required>
+                                <div class="valid-feedback">
+                                    Bagus!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Jumlah stok harus diisi!
+                                </div>
                             </div>
                         </div>
 

@@ -70,11 +70,17 @@ include 'template/_header.php';
                     }
                     ?>
 
-                    <form action="" method="POST" enctype="multipart/form-data">
+                    <form action="" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
                         <div class="row mb-4">
                             <label for="nip" class="col-sm-3 col-form-label">NIP</label>
                             <div class="col-sm-9">
                                 <input type="number" class="form-control" id="nip" name="nip" maxlength="16" autofocus required>
+                                <div class="valid-feedback">
+                                    Bagus!
+                                </div>
+                                <div class="invalid-feedback">
+                                    NIP harus diisi!
+                                </div>
                             </div>
                         </div>
 
@@ -82,6 +88,12 @@ include 'template/_header.php';
                             <label for="nik" class="col-sm-3 col-form-label">NIK</label>
                             <div class="col-sm-9">
                                 <input type="number" class="form-control" id="nik" name="nik" maxlength="16" required>
+                                <div class="valid-feedback">
+                                    Bagus!
+                                </div>
+                                <div class="invalid-feedback">
+                                    NIK harus diisi!
+                                </div>
                             </div>
                         </div>
 
@@ -89,6 +101,12 @@ include 'template/_header.php';
                             <label for="nama" class="col-sm-3 col-form-label">Nama</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" id="nama" name="nama" required>
+                                <div class="valid-feedback">
+                                    Bagus!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Nama harus diisi!
+                                </div>
                             </div>
                         </div>
 
@@ -96,6 +114,12 @@ include 'template/_header.php';
                             <label for="tempat_lahir" class="col-sm-3 col-form-label">Tempat Lahir</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" required>
+                                <div class="valid-feedback">
+                                    Bagus!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Tempat lahir harus diisi!
+                                </div>
                             </div>
                         </div>
 
@@ -103,6 +127,12 @@ include 'template/_header.php';
                             <label for="tanggal_lahir" class="col-sm-3 col-form-label">Tanggal Lahir</label>
                             <div class="col-sm-9">
                                 <input type="date" class="form-control" id="tanggal_lahir" name="tanggal_lahir" required>
+                                <div class="valid-feedback">
+                                    Bagus!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Tanggal lahir harus diisi!
+                                </div>
                             </div>
                         </div>
 
@@ -130,6 +160,12 @@ include 'template/_header.php';
                             <label for="telepon" class="col-sm-3 col-form-label">Telepon</label>
                             <div class="col-sm-9">
                                 <input type="number" class="form-control" id="telepon" name="telepon" minlength="10" maxlength="13" required>
+                                <div class="valid-feedback">
+                                    Bagus!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Nomor telepon harus diisi!
+                                </div>
                             </div>
                         </div>
 
@@ -166,6 +202,12 @@ include 'template/_header.php';
                                     </div>
                                     <div class="col-sm-10">
                                         <input class="form-control" type="file" id="foto" name="foto" required onchange="previewImage()">
+                                        <div class="valid-feedback">
+                                            Bagus!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Silahkan unggah foto!
+                                        </div>
                                     </div>
                                 </div>
                             </div>
