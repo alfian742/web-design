@@ -6,8 +6,12 @@ Dalam pengerjaan tugas menggunakan:
 * DataTables plugin v4.6.0, dapat diakses melalui link berikut: https://datatables.net/
 * Select2 plugin v4.1.0, dapat diakses melalui link berikut: https://select2.org/
 
+<br>
+
 Preview:
 * Preview tugas dapat diakses melalui link berikut: https://alfian742.github.io/web-design/
+
+<br>
 
 Daftar Tugas:
 1. Grid
