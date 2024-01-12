@@ -33,6 +33,9 @@ include 'template/_header.php';
 
                         $namaFoto = $_FILES['foto']['name'];
                         $tmp = $_FILES['foto']['tmp_name'];
+                        $size = $_FILES['foto']['size'];
+                        $ekstensiFoto = pathinfo($namaFoto, PATHINFO_EXTENSION);
+                        $randomNamaFoto = uniqid() . '.' . $ekstensiFoto;
 
                         $cekNIK = mysqli_query($db, "SELECT nik FROM tb_konsumen WHERE nik = '$nik'");
                         if (mysqli_num_rows($cekNIK) > 0) {
@@ -40,10 +43,17 @@ include 'template/_header.php';
                                     <strong>nik sudah terdaftar!</strong> Silahkan coba kembali.
                                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                 </div>';
+                        } elseif (!in_array($ekstensiFoto, ['jpg', 'jpeg', 'png'])) {
+                            echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <strong>Format tidak didukung!</strong> Silahkan unggah foto dengan tipe JPG/JPEG/PNG.
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>';
+                        } elseif ($size > 1000000) {
+                            echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    <strong>Ukuran foto terlalu besar!</strong> Silahkan unggah foto maksimal 1MB.
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>';
                         } else {
-                            $ekstensiFoto = pathinfo($namaFoto, PATHINFO_EXTENSION);
-                            $randomNamaFoto = uniqid() . '.' . $ekstensiFoto;
-
                             if (move_uploaded_file($tmp, 'img/' . $randomNamaFoto)) {
                                 $foto = $randomNamaFoto;
                             };
@@ -69,11 +79,10 @@ include 'template/_header.php';
 
                     <form action="" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
                         <div class="row mb-4">
-                            <label for="nik" class="col-sm-3 col-form-label">NIK</label>
+                            <label for="nik" class="col-sm-3 col-form-label">NIK <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <input type="number" class="form-control" id="nik" name="nik" maxlength="16" autofocus required>
                                 <div class="valid-feedback">
-                                    Bagus!
                                 </div>
                                 <div class="invalid-feedback">
                                     NIK harus diisi!
@@ -82,11 +91,10 @@ include 'template/_header.php';
                         </div>
 
                         <div class="row mb-4">
-                            <label for="nama" class="col-sm-3 col-form-label">Nama</label>
+                            <label for="nama" class="col-sm-3 col-form-label">Nama <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" id="nama" name="nama" required>
                                 <div class="valid-feedback">
-                                    Bagus!
                                 </div>
                                 <div class="invalid-feedback">
                                     Nama harus diisi!
@@ -95,11 +103,10 @@ include 'template/_header.php';
                         </div>
 
                         <div class="row mb-4">
-                            <label for="tempat_lahir" class="col-sm-3 col-form-label">Tempat Lahir</label>
+                            <label for="tempat_lahir" class="col-sm-3 col-form-label">Tempat Lahir <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" required>
                                 <div class="valid-feedback">
-                                    Bagus!
                                 </div>
                                 <div class="invalid-feedback">
                                     Tempat lahir harus diisi!
@@ -108,11 +115,10 @@ include 'template/_header.php';
                         </div>
 
                         <div class="row mb-4">
-                            <label for="tanggal_lahir" class="col-sm-3 col-form-label">Tanggal Lahir</label>
+                            <label for="tanggal_lahir" class="col-sm-3 col-form-label">Tanggal Lahir <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <input type="date" class="form-control" id="tanggal_lahir" name="tanggal_lahir" required>
                                 <div class="valid-feedback">
-                                    Bagus!
                                 </div>
                                 <div class="invalid-feedback">
                                     Tanggal lahir harus diisi!
@@ -121,7 +127,7 @@ include 'template/_header.php';
                         </div>
 
                         <fieldset class="row mb-4">
-                            <legend class="col-form-label col-sm-3 pt-0">Jenis Kelamin</legend>
+                            <legend class="col-form-label col-sm-3 pt-0">Jenis Kelamin <span class="text-danger">*</span></legend>
                             <div class="col-sm-9">
                                 <div class="d-flex flex-row gap-4">
                                     <div class="form-check">
@@ -141,11 +147,10 @@ include 'template/_header.php';
                         </fieldset>
 
                         <div class="row mb-4">
-                            <label for="telepon" class="col-sm-3 col-form-label">Telepon</label>
+                            <label for="telepon" class="col-sm-3 col-form-label">Telepon <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <input type="number" class="form-control" id="telepon" name="telepon" minlength="10" maxlength="13" required>
                                 <div class="valid-feedback">
-                                    Bagus!
                                 </div>
                                 <div class="invalid-feedback">
                                     Nomor telepon harus diisi!
@@ -154,7 +159,7 @@ include 'template/_header.php';
                         </div>
 
                         <div class="row mb-3">
-                            <label for="foto" class="col-sm-3 col-form-label">Foto</label>
+                            <label for="foto" class="col-sm-3 col-form-label">Foto <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <div class="row">
                                     <div class="col-sm-2">
@@ -162,8 +167,8 @@ include 'template/_header.php';
                                     </div>
                                     <div class="col-sm-10">
                                         <input class="form-control" type="file" id="foto" name="foto" required onchange="previewImage()">
+                                        <small>Ukuran foto maksimal 1 MB dengan format JPG/JPEG/PNG.</small>
                                         <div class="valid-feedback">
-                                            Bagus!
                                         </div>
                                         <div class="invalid-feedback">
                                             Silahkan unggah foto!

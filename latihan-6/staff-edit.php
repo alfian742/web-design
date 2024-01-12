@@ -46,35 +46,60 @@ include 'template/_header.php';
                         $tmp = $_FILES['foto']['tmp_name'];
 
                         if (strlen($namaFoto) > 0) {
+                            $size = $_FILES['foto']['size'];
                             $ekstensiFoto = pathinfo($namaFoto, PATHINFO_EXTENSION);
                             $randomNamaFoto = uniqid() . '.' . $ekstensiFoto;
 
-                            if (move_uploaded_file($tmp, 'img/' . $randomNamaFoto)) {
-                                $foto = $randomNamaFoto;
+                            if (!in_array($ekstensiFoto, ['jpg', 'jpeg', 'png'])) {
+                                echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                            <strong>Format tidak didukung!</strong> Silahkan unggah foto dengan tipe JPG/JPEG/PNG.
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>';
+                            } elseif ($size > 1000000) {
+                                echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <strong>Ukuran foto terlalu besar!</strong> Silahkan unggah foto maksimal 1MB.
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>';
+                            } else {
+                                if (move_uploaded_file($tmp, 'img/' . $randomNamaFoto)) {
+                                    $foto = $randomNamaFoto;
 
-                                $fotoLama = $result['foto'];
+                                    $fotoLama = $result['foto'];
 
-                                if ($fotoLama !== 'default.png') {
-                                    $pathFoto = 'img/' . $foto;
-                                    if (file_exists($pathFoto)) {
-                                        unlink($pathFoto);
+                                    if ($fotoLama !== 'default.png') {
+                                        $pathFoto = 'img/' . $fotoLama;
+                                        if (file_exists($pathFoto)) {
+                                            unlink($pathFoto);
+                                        }
                                     }
+                                };
+
+                                $sql = "UPDATE tb_pegawai SET
+                                        nik = '$nik', 
+                                        nama = '$nama', 
+                                        tempat_lahir = '$tempat_lahir',
+                                        tanggal_lahir = '$tanggal_lahir', 
+                                        jenis_kelamin = '$jenis_kelamin', 
+                                        telepon = '$telepon', 
+                                        status_pegawai = '$status_pegawai', 
+                                        agama = '$agama',
+                                        foto = '$foto'
+                                        WHERE nip = '$nip'";
+
+                                $query = mysqli_query($db, $sql);
+
+                                if ($query) {
+                                    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                                            <strong>Data berhasil disimpan!</strong> Untuk melihat data silahkan klik <a href="staff-data.php">disini</a>.
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>';
+                                } else {
+                                    echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                            <strong>Data gagal disimpan!</strong> Silahkan coba kembali.
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>';
                                 }
-                            };
-
-                            $sql = "UPDATE tb_pegawai SET
-                                    nik = '$nik', 
-                                    nama = '$nama', 
-                                    tempat_lahir = '$tempat_lahir',
-                                    tanggal_lahir = '$tanggal_lahir', 
-                                    jenis_kelamin = '$jenis_kelamin', 
-                                    telepon = '$telepon', 
-                                    status_pegawai = '$status_pegawai', 
-                                    agama = '$agama',
-                                    foto = '$foto'
-                                    WHERE nip = '$nip'";
-
-                            $query = mysqli_query($db, $sql);
+                            }
                         } else {
                             $sql = "UPDATE tb_pegawai SET
                                     nik = '$nik', 
@@ -88,36 +113,35 @@ include 'template/_header.php';
                                     WHERE nip = '$nip'";
 
                             $query = mysqli_query($db, $sql);
-                        }
 
-                        if ($query) {
-                            echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-                                    <strong>Data berhasil disimpan!</strong> Untuk melihat data silahkan klik <a href="staff-data.php">disini</a>.
-                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                </div>';
-                        } else {
-                            echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                    <strong>Data gagal disimpan!</strong> Silahkan coba kembali.
-                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                </div>';
+                            if ($query) {
+                                echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        <strong>Data berhasil disimpan!</strong> Untuk melihat data silahkan klik <a href="staff-data.php">disini</a>.
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>';
+                            } else {
+                                echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <strong>Data gagal disimpan!</strong> Silahkan coba kembali.
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>';
+                            }
                         }
                     }
                     ?>
 
                     <form action="" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
                         <div class="row mb-4">
-                            <label for="nip" class="col-sm-3 col-form-label">NIP</label>
+                            <label for="nip" class="col-sm-3 col-form-label">NIP <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <input type="number" class="form-control" id="nip" name="nip" maxlength="16" disabled value="<?= $result['nip']; ?>">
                             </div>
                         </div>
 
                         <div class="row mb-4">
-                            <label for="nik" class="col-sm-3 col-form-label">NIK</label>
+                            <label for="nik" class="col-sm-3 col-form-label">NIK <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <input type="number" class="form-control" id="nik" name="nik" maxlength="16" autofocus required value="<?= $result['nik']; ?>">
                                 <div class="valid-feedback">
-                                    Bagus!
                                 </div>
                                 <div class="invalid-feedback">
                                     NIK harus diisi!
@@ -126,11 +150,10 @@ include 'template/_header.php';
                         </div>
 
                         <div class="row mb-4">
-                            <label for="nama" class="col-sm-3 col-form-label">Nama</label>
+                            <label for="nama" class="col-sm-3 col-form-label">Nama <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" id="nama" name="nama" required value="<?= $result['nama']; ?>">
                                 <div class="valid-feedback">
-                                    Bagus!
                                 </div>
                                 <div class="invalid-feedback">
                                     Nama harus diisi!
@@ -139,11 +162,10 @@ include 'template/_header.php';
                         </div>
 
                         <div class="row mb-4">
-                            <label for="tempat_lahir" class="col-sm-3 col-form-label">Tempat Lahir</label>
+                            <label for="tempat_lahir" class="col-sm-3 col-form-label">Tempat Lahir <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" required value="<?= $result['tempat_lahir']; ?>">
                                 <div class="valid-feedback">
-                                    Bagus!
                                 </div>
                                 <div class="invalid-feedback">
                                     Tempat lahir harus diisi!
@@ -152,11 +174,10 @@ include 'template/_header.php';
                         </div>
 
                         <div class="row mb-4">
-                            <label for="tanggal_lahir" class="col-sm-3 col-form-label">Tanggal Lahir</label>
+                            <label for="tanggal_lahir" class="col-sm-3 col-form-label">Tanggal Lahir <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <input type="date" class="form-control" id="tanggal_lahir" name="tanggal_lahir" required value="<?= $result['tanggal_lahir']; ?>">
                                 <div class="valid-feedback">
-                                    Bagus!
                                 </div>
                                 <div class="invalid-feedback">
                                     Tanggal lahir harus diisi!
@@ -165,7 +186,7 @@ include 'template/_header.php';
                         </div>
 
                         <fieldset class="row mb-4">
-                            <legend class="col-form-label col-sm-3 pt-0">Jenis Kelamin</legend>
+                            <legend class="col-form-label col-sm-3 pt-0">Jenis Kelamin <span class="text-danger">*</span></legend>
                             <div class="col-sm-9">
                                 <div class="d-flex flex-row gap-4">
                                     <div class="form-check">
@@ -185,11 +206,10 @@ include 'template/_header.php';
                         </fieldset>
 
                         <div class="row mb-4">
-                            <label for="telepon" class="col-sm-3 col-form-label">Telepon</label>
+                            <label for="telepon" class="col-sm-3 col-form-label">Telepon <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <input type="number" class="form-control" id="telepon" name="telepon" minlength="10" maxlength="13" required value="<?= $result['telepon']; ?>">
                                 <div class="valid-feedback">
-                                    Bagus!
                                 </div>
                                 <div class="invalid-feedback">
                                     Nomor telepon harus diisi!
@@ -198,7 +218,7 @@ include 'template/_header.php';
                         </div>
 
                         <div class="row mb-4">
-                            <label for="status_pegawai" class="col-sm-3 col-form-label">Status</label>
+                            <label for="status_pegawai" class="col-sm-3 col-form-label">Status <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <select class="form-select" id="status_pegawai" name="status_pegawai">
                                     <option value="Menikah" <?= ($result['status_pegawai'] == "Menikah") ? 'selected' : ''; ?>>Menikah</option>
@@ -208,7 +228,7 @@ include 'template/_header.php';
                         </div>
 
                         <div class="row mb-4">
-                            <label for="agama" class="col-sm-3 col-form-label">Agama</label>
+                            <label for="agama" class="col-sm-3 col-form-label">Agama <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <select class="form-select" id="agama" name="agama">
                                     <option value="Islam" <?= ($result['agama'] == "Islam") ? 'selected' : ''; ?>>Islam</option>
@@ -230,6 +250,7 @@ include 'template/_header.php';
                                     </div>
                                     <div class="col-sm-10">
                                         <input class="form-control" type="file" id="foto" name="foto" onchange="previewImage()">
+                                        <small>Ukuran foto maksimal 1 MB dengan format JPG/JPEG/PNG.</small>
                                     </div>
                                 </div>
                             </div>

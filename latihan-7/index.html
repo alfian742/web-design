@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 7 - Website Portal</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/img/UTM.png" type="image/png">
+    <link rel="apple-touch-icon" href="../assets/img/UTM.png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="../assets/fontawesome-icons/css/all.min.css">
+
+    <!-- Aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- My css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top" id="navbar">
+        <div class="container px-4">
+            <a class="navbar-brand fw-semibold" href="index.html">
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="img/logo-ntb.png" alt="Logo" height="24" class="d-inline-block">
+                    Desa Pesanggrahan
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="btn border-0 w-100" href="#">Masuk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark w-100" href="#">Daftar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="container px-4">
+        <!-- Hero section -->
+        <section class="py-4">
+            <div class="bg-hero rounded-5 p-5 d-flex flex-column">
+                <div class="row text-white">
+                    <div class="col-lg-6">
+                        <div data-aos="fade-right" data-aos-duration="1000">
+                            <h1 class="text-uppercase">Desa Pesanggrahan</h1>
+                            <h5>Maju, Religius, dan Berbudaya</h5>
+
+                            <p class="my-4">Persembahan untuk ibu pertiwi, membangun tanah harapan yang menjanjikan masa
+                                depan lebih cerah.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-auto">
+                    <div class="col">
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <div class="card border-0 rounded-5 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-none d-lg-block">
+                                        <div class="d-flex flex-wrap gap-3 justify-content-center align-items-center">
+                                            <img src="img/logo-ntb.png" alt="..." height="64">
+
+                                            <div class="vr"></div>
+
+                                            <div class="d-flex flex-column">
+                                                <h5>Tanggal Berdiri</h5>
+                                                <span>31 Agustus 1993</span>
+                                            </div>
+
+                                            <div class="vr"></div>
+
+                                            <div class="d-flex flex-column">
+                                                <h5>Lokasi</h5>
+                                                <span>Kabupaten Lombok Timur</span>
+                                            </div>
+
+                                            <div class="vr"></div>
+
+                                            <div class="d-flex flex-column">
+                                                <h5>Luas Wilayah</h5>
+                                                <span>61,30 km²</span>
+                                            </div>
+
+                                            <div class="vr"></div>
+
+                                            <div class="d-flex flex-column">
+                                                <h5>Populasi</h5>
+                                                <span>452.812 jiwa</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-lg-none">
+                                        <div class="row justify-content-center text-center py-4">
+                                            <div class="col-12">
+                                                <img src="img/logo-ntb.png" alt="..." height="64"
+                                                    class="mx-auto d-block mb-4">
+                                            </div>
+
+                                            <div class="col-12">
+                                                <h5>Tanggal Berdiri</h5>
+                                                <span>31 Agustus 1993</span>
+                                            </div>
+
+                                            <hr class="col-6 my-4">
+
+                                            <div class="col-12">
+                                                <h5>Lokasi</h5>
+                                                <span>Kabupaten Lombok Timur</span>
+                                            </div>
+
+                                            <hr class="col-6 my-4">
+
+                                            <div class="col-12">
+                                                <h5>Luas Wilayah</h5>
+                                                <span>61,30 km²</span>
+                                            </div>
+
+                                            <hr class="col-6 my-4">
+
+                                            <div class="col-12">
+                                                <h5>Populasi</h5>
+                                                <span>452.812 jiwa</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="my-4"></div>
+
+        <!-- Blog section -->
+        <section class="py-4">
+            <h2 class="text-center mb-4">Terbaru</h2>
+
+            <div class="row">
+                <div class="col-6 col-lg-3 mb-4">
+                    <div data-aos="flip-left" data-aos-duration="1000">
+                        <div class="card border-0 rounded-4 shadow-sm w-100 h-100">
+                            <img src="https://source.unsplash.com/random/300×300"
+                                class="card-img-custom object-fit-cover rounded-top-4" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate">Judul Artikel</h5>
+
+                                <div class="d-flex flex-wrap gap-2 my-2">
+                                    <small class="text-body-secondary">Admin,</small>
+                                    <small class="text-body-secondary">17-12-2023 12:12</small>
+                                </div>
+
+                                <p class="card-text text-overflow-clamp">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing
+                                    elit. Enim, velit quidem? Magni doloribus repudiandae quidem aliquam sunt assumenda
+                                    id
+                                    iste?</p>
+
+                                <a href="#" class="btn btn-dark">Lihat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <div data-aos="flip-left" data-aos-duration="1000">
+                        <div class="card border-0 rounded-4 shadow-sm w-100 h-100">
+                            <img src="https://source.unsplash.com/random/300×300"
+                                class="card-img-custom object-fit-cover rounded-top-4" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate">Judul Artikel</h5>
+
+                                <div class="d-flex flex-wrap gap-2 my-2">
+                                    <small class="text-body-secondary">Admin,</small>
+                                    <small class="text-body-secondary">17-12-2023 12:12</small>
+                                </div>
+
+                                <p class="card-text text-overflow-clamp">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing
+                                    elit. Enim, velit quidem? Magni doloribus repudiandae quidem aliquam sunt assumenda
+                                    id
+                                    iste?</p>
+
+                                <a href="#" class="btn btn-dark">Lihat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <div data-aos="flip-left" data-aos-duration="1000">
+                        <div class="card border-0 rounded-4 shadow-sm w-100 h-100">
+                            <img src="https://source.unsplash.com/random/300×300"
+                                class="card-img-custom object-fit-cover rounded-top-4" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate">Judul Artikel</h5>
+
+                                <div class="d-flex flex-wrap gap-2 my-2">
+                                    <small class="text-body-secondary">Admin,</small>
+                                    <small class="text-body-secondary">17-12-2023 12:12</small>
+                                </div>
+
+                                <p class="card-text text-overflow-clamp">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing
+                                    elit. Enim, velit quidem? Magni doloribus repudiandae quidem aliquam sunt assumenda
+                                    id
+                                    iste?</p>
+
+                                <a href="#" class="btn btn-dark">Lihat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <div data-aos="flip-left" data-aos-duration="1000">
+                        <div class="card border-0 rounded-4 shadow-sm w-100 h-100">
+                            <img src="https://source.unsplash.com/random/300×300"
+                                class="card-img-custom object-fit-cover rounded-top-4" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-truncate">Judul Artikel</h5>
+
+                                <div class="d-flex flex-wrap gap-2 my-2">
+                                    <small class="text-body-secondary">Admin,</small>
+                                    <small class="text-body-secondary">17-12-2023 12:12</small>
+                                </div>
+
+                                <p class="card-text text-overflow-clamp">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing
+                                    elit. Enim, velit quidem? Magni doloribus repudiandae quidem aliquam sunt assumenda
+                                    id
+                                    iste?</p>
+
+                                <a href="#" class="btn btn-dark">Lihat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center mt-4">
+                <a href="#" class="btn btn-dark">Lihat Semua Postingan</a>
+            </div>
+        </section>
+
+        <div class="my-4"></div>
+
+        <!-- Gallery section -->
+        <section class="py-4">
+            <h2 class="text-center mb-4">Galeri</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-6 col-lg-3 mb-4">
+                    <div data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="card card-custom border-0 rounded-4 shadow-sm text-bg-dark position-relative"
+                            style="background: linear-gradient(to top,rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.0)), url('https://source.unsplash.com/random/300×300');">
+                            <div class="card-body position-absolute bottom-0 w-100">
+                                <h5 class="card-title text-center">Gambar</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <div data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="card card-custom border-0 rounded-4 shadow-sm text-bg-dark position-relative"
+                            style="background: linear-gradient(to top,rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.0)), url('https://source.unsplash.com/random/300×300');">
+                            <div class="card-body position-absolute bottom-0 w-100">
+                                <h5 class="card-title text-center">Gambar</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <div data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="card card-custom border-0 rounded-4 shadow-sm text-bg-dark position-relative"
+                            style="background: linear-gradient(to top,rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.0)), url('https://source.unsplash.com/random/300×300');">
+                            <div class="card-body position-absolute bottom-0 w-100">
+                                <h5 class="card-title text-center">Gambar</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <div data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="card card-custom border-0 rounded-4 shadow-sm text-bg-dark position-relative"
+                            style="background: linear-gradient(to top,rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.0)), url('https://source.unsplash.com/random/300×300');">
+                            <div class="card-body position-absolute bottom-0 w-100">
+                                <h5 class="card-title text-center">Gambar</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center mt-4">
+                <a href="#" class="btn btn-dark">Lihat Galeri</a>
+            </div>
+        </section>
+
+        <div class="my-4"></div>
+
+        <!-- Video section -->
+        <section class="py-4">
+            <h2 class="text-center mb-4">Video</h2>
+
+            <div class="row justify-content-center">
+                <div class="col mb-4">
+                    <div class="embed-video">
+                        <iframe class="rounded-4" src="https://www.youtube.com/embed/jhBM2shbDB8?si=0Eue9YwMuDy8MpBt"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+        </section>
+
+        <div class="my-4"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-bg-dark">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <img src="img/logo-ntb.png" alt="..." height="64">
+
+                    <h4 class="my-2">Kota Mataram</h4>
+
+                    <p>Maju, Religius, dan Berbudaya</p>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="mb-2">Menu</h5>
+
+                            <div class="d-flex flex-column gap-2">
+                                <a href="#"
+                                    class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Beranda</a>
+                                <a href="#"
+                                    class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Tentang</a>
+                                <a href="#"
+                                    class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Kontak</a>
+                                <a href="#"
+                                    class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Galeri</a>
+                                <a href="#"
+                                    class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Blog</a>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <h5 class="mb-2">Ikuti kami</h5>
+
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="#" target="_blank" class="btn btn-sm btn-outline-light"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="#" target="_blank" class="btn btn-sm btn-outline-light"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="#" target="_blank" class="btn btn-sm btn-outline-light"><i
+                                        class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#" target="_blank" class="btn btn-sm btn-outline-light"><i
+                                        class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="text-center fw-medium border-top pt-4">
+                        &copy; Copyright 2024 Desa Pesanggrahan
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Button scroll to top -->
+    <div class="position-fixed bottom-0 end-0 mb-4 me-4">
+        <button class="btn btn-sm btn-light shadow-sm" id="scrollToTopBtn"><i class="fa-solid fa-angle-up"></i></button>
+    </div>
+
+    <!-- Bootstrap js -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- My js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
