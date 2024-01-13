@@ -39,6 +39,21 @@ body {
     height: 200px;
 }
 
+.modal-img {
+    height: 200px;
+}
+
+.carousel-card {
+    padding: 1rem 4rem;
+}
+
+.carousel-icon-custom {
+    height: 40px;
+    width: 40px;
+    font-size: 28px;
+    border-radius: 0.5rem;
+}
+
 .embed-video {
     position: relative;
     width: 100%;
@@ -64,6 +79,10 @@ body {
 @media (max-width: 991px) {
     .bg-hero {
         background: linear-gradient(to bottom, rgb(0 0 0 / 0.8), rgb(0 0 0 / 0)), url('../img/bg-hero.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
         height: auto;
     }
 
@@ -75,5 +94,9 @@ body {
 @media (max-width: 575px) {
     .card-img-custom {
         height: 150px;
+    }
+
+    .modal-img {
+        height: 300px;
     }
 }
