@@ -46,11 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > 0) {
-            navbar.classList.remove('bg-light');
-            navbar.classList.add('bg-white', 'shadow-sm');
+            navbar.classList.add('shadow-sm');
         } else {
-            navbar.classList.remove('bg-white', 'shadow-sm');
-            navbar.classList.add('bg-light');
+            navbar.classList.remove('shadow-sm');
         }
     });
 
